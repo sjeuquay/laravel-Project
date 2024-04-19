@@ -1,0 +1,611 @@
+<div class="" *ngIf="productdetail">
+    <!-- breadcrumb -->
+    <section>
+        <div class="container-xl container-lg pt-4 pb-4 d-none d-lg-block">
+            <div class="d-flex justify-content-between flex-column flex-lg-row">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item ">
+                            <a class="text-decoration-none text-secondary text-capitalize" href="">Trang
+                                chủ</a>
+                        </li>
+                        <li class="breadcrumb-item text-secondary fw-bold text-capitalize" aria-current="page"
+                            *ngIf="productdetail?.kind === 'quốc tế' ">Tour Nước Ngoài</li>
+                        <li class="breadcrumb-item text-secondary fw-bold text-capitalize" aria-current="page"
+                            *ngIf="productdetail?.kind === 'trong nước' ">Tour Trong Nước</li>
+                        <li class="breadcrumb-item active text-dark fw-bold text-capitalize text-truncate" aria-current="page">
+                            {{productdetail.name}}</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- title 1 -->
+    <section class="d-none d-lg-block">
+        <div class="container-xl container-lg">
+            <div class="">
+                <h3 class="text-capitalize">{{productdetail.name}}</h3>
+                <span style="font-size: 13px; margin-right: 10px;"
+                    class="fw-medium bg-body-secondary pe-2 text-secondary ps-2 pt-1 pb-1 rounded-3 text-capitalize"
+                    *ngIf="productdetail?.kind === 'quốc tế' ">Tour quốc tế</span>
+                <span style="font-size: 13px; margin-right: 10px;"
+                    class="fw-medium bg-body-secondary pe-2 text-secondary ps-2 pt-1 pb-1 rounded-3 text-capitalize"
+                    *ngIf="productdetail?.kind === 'trong nước' ">Tour trong nước</span>
+                <span style="font-size: 13px;"
+                    class="fw-medium bg-body-secondary pe-2 text-secondary ps-2 pe-2 pt-1 pb-1 rounded-3 text-capitalize">Tour
+                    ghép</span>
+            </div>
+        </div>
+    </section>
+    <!-- end -->
+
+    <!-- rating 1 -->
+    <section class="d-none d-lg-block">
+        <div class="container-xl container-lg">
+            <div class="rating-list d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                    <ul style="list-style: none;" class="d-flex p-0 mt-3">
+                        <li class="me-1 text-warning ">
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                        <li class="me-1 text-warning ">
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                        <li class="me-1 text-warning ">
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                        <li class="me-1 text-warning ">
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                        <li class="me-1 text-warning">
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                        <li class="me-2">
+                            <span class="text-capitalize">( 230 đánh giá )</span>
+                        </li>
+                    </ul>
+                    <span class="me-2">-</span>
+                    <span class="d-flex text-capitalize">2K+ Đã đặt tour</span>
+                </div>
+                <div class="">
+                    <a href="#" class="text-decoration-none text-dark">
+                        <i class="bi bi-heart"></i>
+                    </a>
+                    <span class="ms-2 text-capitalize">Yêu thích</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end -->
+
+    <!-- list img -->
+    <section>
+        <div class="container-xl container-lg">
+            <div class="list-img d-none d-lg-block">
+                <div class="row">
+                    <img src="" alt="">
+                    <div class="col-sm-12 col-lg-8 p-0">
+                        <div class="">
+                            <img style="height: 500px;" class="img-fluid rounded-2 w-100 pe-2"
+                                src="/assets/img/{{productdetail.thumbnail[0]}}.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 p-0">
+                        <div class="">
+                            <img style="height: 250px;" src="/assets/img/{{productdetail.thumbnail[1]}}.jpg" alt=""
+                                class="rounded-2 w-100 img-fluid pb-1">
+                        </div>
+                        <div class="">
+                            <img style="height: 250px;" src="/assets/img/{{productdetail.thumbnail[2]}}.jpg" alt=""
+                                class="img-fluid pt-1 w-100 rounded-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list-img d-sm-block d-lg-none">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel"
+                    *ngIf="productdetail">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="" style="height: 300px;">
+                                <img src="/assets/img/{{productdetail.thumbnail[0]}}.jpg"
+                                    class="d-block w-100 h-100 img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="" style="height: 300px;">
+                                <img src="/assets/img/{{productdetail.thumbnail[1]}}.jpg"
+                                    class="d-block w-100 h-100 img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="" style="height: 300px;">
+                                <img src="/assets/img/{{productdetail.thumbnail[2]}}.jpg"
+                                    class="d-block w-100 h-100 img-fluid" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end -->
+
+    <!-- voucher -->
+    <section>
+        <div class="container-xl container-lg">
+            <div class=" mt-3 mb-3">
+                <span class="fw-medium bg-danger-subtle pe-2 ps-2 me-2 pb-1 rounded-2 text-danger"
+                    *ngFor="let i of productdetail.preferential">{{i}}</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- title 2 -->
+    <section class="d-sm-block d-lg-none">
+        <div class="container-xl container-lg">
+            <div class="">
+                <h3 class="text-capitalize">{{productdetail.name}}</h3>
+                <span style="font-size: 13px;"
+                    class="fw-medium bg-body-secondary pe-2 text-secondary ps-2 pt-1 pb-1 rounded-3 text-capitalize">Tour
+                    trong nước</span>
+                <span style="font-size: 13px; margin-right: 10px;"
+                    class="fw-medium bg-body-secondary pe-2 text-secondary ps-2 pt-1 pb-1 rounded-3 text-capitalize"
+                    *ngIf="productdetail?.kind === 'quốc tế' ">Tour quốc tế</span>
+                <span style="font-size: 13px; margin-right: 10px;"
+                    class="fw-medium bg-body-secondary pe-2 text-secondary ps-2 pt-1 pb-1 rounded-3 text-capitalize"
+                    *ngIf="productdetail?.kind === 'trong nước' ">Tour trong nước</span>
+                <span style="font-size: 13px;"
+                    class="fw-medium bg-body-secondary pe-2 text-secondary ps-2 pt-1 pb-1 rounded-3 text-capitalize">Tour
+                    ghép</span>
+            </div>
+        </div>
+    </section>
+    <!-- end -->
+
+    <!-- rating 2 -->
+    <section class="d-sm-block d-lg-none">
+        <div class="container-xl container-lg">
+            <div class="rating-list d-flex">
+                <div class="d-flex flex-column">
+                    <ul style="list-style: none;" class="d-flex p-0 m-0 mt-3 mb-2">
+                        <li class="me-1 text-warning ">
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                        <li class="me-1 text-warning ">
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                        <li class="me-1 text-warning ">
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                        <li class="me-1 text-warning ">
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                        <li class="me-1 text-warning">
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                        <li class="me-2">
+                            <span class="text-capitalize">( 230 đánh giá )</span>
+                        </li>
+                    </ul>
+                    <span class="text-capitalize text-start">2K+ Đã đặt tour</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end -->
+
+    <section>
+        <div class="container-xl container-lg">
+            <div class="content pb-5">
+                <h4 class="border-start border-5 border-danger ps-3 mb-4 mt-5 text-capitalize">Các gói dịch vụ</h4>
+                <div class="row">
+                    <div class="col-sm-12 col-lg-9">
+                        <div class="bg-light p-4 rounded-2">
+                            <h5 class="mb-4">Vui lòng chọn dịch vụ</h5>
+                            <div class="time-start">
+                                <p class="p-0 m-0 mb-2">Chọn ngày khởi hành</p>
+                                <div class="mb-3">
+                                    <form action="">
+                                        <input class="btn btn-outline-dark rounded-2 p-1" type="date" name="" id="">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="type-tour">
+                                <p class="m-0 mb-3">Gói dịch vụ</p>
+                                <div class="mb-3">
+                                    <span class="btn btn-outline-dark me-2">Tour trong ngày</span>
+                                    <span class="btn btn-outline-dark me-2">Tour 2N1Đ</span>
+                                </div>
+                                <div class="">
+                                    <p class="btn btn-outline-dark me-2">Tour đặt biệt: ngắm bình minh xong về</p>
+                                </div>
+                                <div class="">
+                                    <p class="btn btn-outline-dark me-2">Tour đặt biệt: ngắm hoàng hôn xong về</p>
+                                </div>
+                            </div>
+                            <div class="quantity">
+                                <p class="text-capitalize ">số lượng</p>
+                                <div class="d-flex justify-content-between bg-white p-3 rounded-3 w-100 mb-3">
+                                    <div class="span">Số vé</div>
+                                    <div class="d-flex flex-end">
+                                        <input type="number"  class="form-control " value="1" min="1" #quantity >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <h4 class="border-start border-5 border-danger ps-3 mb-4 mt-4 text-capitalize">Tìm hiểu
+                                thêm về dịch vụ</h4>
+                            <div class="row">
+                                <div class="col col-12">
+                                    <div class="img mb-3" *ngFor="let i of productdetail.thumbnail">
+                                        <img style="height: 500px;" class="rounded-2 w-100 img-fluid"
+                                            src="/assets/img/{{i}}.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h4 class="border-start border-5 border-danger ps-3 mb-4 mt-4 text-capitalize">đánh
+                                    giá
+                                </h4>
+
+                                <!-- comment myself -->
+                                <div>
+                                    <textarea class="w-100 form-control" name="" id="" cols="30" rows="5"></textarea>
+                                    <div class="mt-3 mb-4">
+                                        <button type="button"
+                                            class="d-none d-lg-block btn btn-info text-capitalize text-white">Gửi
+                                            bình luận</button>
+                                        <button type="button"
+                                            class="d-sm-block d-lg-none w-100 btn btn-info text-capitalize text-white">Gửi
+                                            bình luận</button>
+                                    </div>
+                                </div>
+                                <!-- end -->
+
+                                <!-- all star -->
+                                <div class="row align-items-center">
+                                    <div class="col-3 col-xs-2 col-md-2 col-lg-2">
+                                        <span class="fs-1 fw-bold">4.5</span>
+                                        <span class="text-secondary fs-4">/5</span>
+                                    </div>
+                                    <div class="col-9 col-xs-3 col-md-3 col-lg-3">
+                                        <i class="bi bi-star-fill fs-2 me-2 text-warning"></i>
+                                        <i class="bi bi-star-fill fs-2 me-2 text-warning"></i>
+                                        <i class="bi bi-star-fill fs-2 me-2 text-warning"></i>
+                                        <i class="bi bi-star-fill fs-2 me-2 text-warning"></i>
+                                        <i class="bi bi-star-half fs-2 me-2 text-warning"></i>
+                                    </div>
+                                    <div class="col-12 col-xs-12 col-md-3 col-lg-3">
+                                        <span>(140 bài đánh giá)</span>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                            </div>
+
+                            <div class="">
+                                <!-- all comment img -->
+                                <div class="bg-light mt-3 p-3 pb-2 rounded-2">
+                                    <div class="row align-items-center">
+                                        <div class="col-3 col-lg-3">
+                                            <h5 class="text-capitalize fs-4">Album ảnh</h5>
+                                            <p class="text-capitalize">300 Ảnh</p>
+                                        </div>
+                                        <div class="col-9 col-lg-9">
+                                            <ul style="list-style: none;" class="d-flex justify-content-end p-0">
+                                                <li class="me-2 d-none d-sm-block">
+                                                    <img style="width: 100px; height: 100px;"
+                                                        class="img-fluid rounded-2"
+                                                        src="https://static.vinwonders.com/production/choi-gi-o-phan-thiet-1.jpg"
+                                                        alt="">
+                                                </li>
+                                                <li class="me-2 d-none d-sm-block">
+                                                    <img style="width: 100px; height: 100px;"
+                                                        class="img-fluid rounded-2"
+                                                        src="https://static.vinwonders.com/production/choi-gi-o-phan-thiet-1.jpg"
+                                                        alt="">
+                                                </li>
+                                                <li class="me-2 d-none d-sm-block">
+                                                    <img style="width: 100px; height: 100px;"
+                                                        class="img-fluid rounded-2"
+                                                        src="https://static.vinwonders.com/production/choi-gi-o-phan-thiet-1.jpg"
+                                                        alt="">
+                                                </li>
+                                                <li class="me-2">
+                                                    <img style="width: 100px; height: 100px;"
+                                                        class="img-fluid rounded-2"
+                                                        src="https://static.vinwonders.com/production/choi-gi-o-phan-thiet-1.jpg"
+                                                        alt="">
+                                                </li>
+                                                <li class="me-2 position-relative">
+                                                    <img style="width: 100px; height: 100px;"
+                                                        class="img-fluid rounded-2"
+                                                        src="https://static.vinwonders.com/production/choi-gi-o-phan-thiet-1.jpg"
+                                                        alt="">
+                                                    <div class="wrapper position-absolute rounded-2">
+                                                        <div
+                                                            class="w-100 h-100 d-flex align-items-center justify-content-center fs-1 text-white">
+                                                            +</div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end -->
+
+                                <!-- star comment -->
+                                <div class="list-btn-review mt-4 mb-4">
+                                    <span class="btn btn-outline-danger rounded-5 text-capitalize me-2">Tất cả</span>
+                                    <span class="btn btn-outline-danger rounded-5 text-capitalize me-2">4.0+</span>
+                                    <span class="btn btn-outline-danger rounded-5 text-capitalize me-2">3.0+</span>
+                                    <span class="btn btn-outline-danger rounded-5 text-capitalize me-2">2.0+</span>
+                                    <span class="btn btn-outline-danger rounded-5 text-capitalize me-2">1.0+</span>
+                                </div>
+                                <!-- end -->
+
+                                <!-- comment -->
+                                <div class="">
+                                    <div class="mb-4">
+                                        <div class="border p-3 rounded-2 bg-light">
+                                            <div class="comment-header d-flex align-items-center">
+                                                <div class="img">
+                                                    <img style="width: 60px; height: 60px;"
+                                                        class="img-fluid rounded-circle"
+                                                        src="data:image/png;base64,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"
+                                                        alt="">
+                                                </div>
+                                                <div class="ms-2">
+                                                    <p class="fw-medium text-capitalize m-0">Ẩn Danh</p>
+                                                    <p style="font-size: 15px;"
+                                                        class="text-secondary text-capitalize m-0">1
+                                                        ngày trước</p>
+                                                </div>
+                                            </div>
+                                            <div class="comment-star">
+                                                <i class="bi bi-star-fill fs-6 text-warning"></i>
+                                                <i class="bi bi-star-fill fs-6 text-warning"></i>
+                                                <i class="bi bi-star-fill fs-6 text-warning"></i>
+                                                <i class="bi bi-star-fill fs-6 text-warning"></i>
+                                                <i class="bi bi-star-half fs-6 text-warning"></i>
+                                            </div>
+                                            <div class="comment-body mb-3">
+                                                <p class="text-truncate comment-trun">
+                                                    Chúng tôi rất vui khi được tham gia chuyến tham quan Mũi Né một ngày
+                                                    do
+                                                    Công ty Du lịch SST cung cấp và đã trải qua khoảng thời gian tuyệt
+                                                    vời
+                                                    và khó quên. Hành trình này không chỉ cho chúng tôi cơ hội chiêm
+                                                    ngưỡng
+                                                    phong cảnh hữu tình, nền văn hóa phong phú của Mũi Né mà còn cảm
+                                                    nhận
+                                                    sâu sắc sự quan tâm, chuyên nghiệp của SST Travel Agency đối với
+                                                    khách
+                                                    hàng. Chúng tôi đã gặp hướng dẫn viên của mình, Phil, vào buổi sáng,
+                                                    và
+                                                    sự nhiệt tình cũng như tính chuyên nghiệp của anh ấy ngay lập tức
+                                                    khiến
+                                                    chúng tôi cảm nhận được sự đặc biệt của hành trình này. Phil đã giới
+                                                    thiệu chi tiết về lịch sử và văn hóa của Mũi Né, giúp chúng tôi hiểu
+                                                    sâu
+                                                    hơn về nơi này. Trong suốt cả ngày, chúng tôi đã ghé thăm nhiều điểm
+                                                    tham quan nổi tiếng, bao gồm Đồi cát Mũi Né, Đồi cát đỏ và làng
+                                                    chài.
+                                                    Mỗi cảnh tượng đều ngoạn mục và những lời giải thích sinh động của
+                                                    Phil
+                                                    càng nâng cao sự đánh giá cao của chúng tôi đối với cuộc sống và văn
+                                                    hóa
+                                                    địa phương. Chúng tôi muốn gửi lời cảm ơn đặc biệt đến hướng dẫn
+                                                    viên
+                                                    của chúng tôi, Phil. Anh ấy không chỉ chuyên nghiệp, nhiệt tình mà
+                                                    còn
+                                                    rất chu đáo và luôn kiên nhẫn giải đáp các thắc mắc của chúng tôi,
+                                                    khiến
+                                                    chúng tôi cảm thấy thực sự được quan tâm và quý trọng. Cuối cùng,
+                                                    chúng
+                                                    tôi xin chân thành cảm ơn SST Travel Agency vì sự sắp xếp và dịch vụ
+                                                    của
+                                                    họ. Sự chuyên nghiệp và tận tâm của họ đã lấp đầy hành trình của
+                                                    chúng
+                                                    tôi với những kỷ niệm tuyệt vời và chúng tôi mong muốn được hợp tác
+                                                    với
+                                                    họ một lần nữa để khám phá những địa điểm đẹp hơn nữa.
+                                                </p>
+                                                <a href="#" class="text-info nav-underline">Xem thêm</a>
+                                            </div>
+                                            <div class="comment-img">
+                                                <ul style="list-style: none;" class="d-flex p-0">
+                                                    <li class="me-2">
+                                                        <div class="img">
+                                                            <img style="width: 150px; height: 150px;"
+                                                                class="img-fluid rounded-2 d-none d-lg-block"
+                                                                src="https://static.vinwonders.com/production/choi-gi-o-phan-thiet-1.jpg"
+                                                                alt="">
+                                                            <img style="width: 100px; height: 100px;"
+                                                                class="img-fluid rounded-2 d-lg-none d-sm-block"
+                                                                src="https://static.vinwonders.com/production/choi-gi-o-phan-thiet-1.jpg"
+                                                                alt="">
+                                                        </div>
+                                                    </li>
+                                                    <li class="me-2">
+                                                        <div class="img">
+                                                            <img style="width: 150px; height: 150px;"
+                                                                class="img-fluid rounded-2 d-none d-lg-block"
+                                                                src="https://static.vinwonders.com/production/choi-gi-o-phan-thiet-1.jpg"
+                                                                alt="">
+                                                            <img style="width: 100px; height: 100px;"
+                                                                class="img-fluid rounded-2 d-lg-none d-sm-block"
+                                                                src="https://static.vinwonders.com/production/choi-gi-o-phan-thiet-1.jpg"
+                                                                alt="">
+                                                        </div>
+                                                    </li>
+                                                    <li class="me-2 d-none d-sm-block">
+                                                        <div class="img">
+                                                            <img style="width: 150px; height: 150px;"
+                                                                class="img-fluid rounded-2 d-none d-lg-block"
+                                                                src="https://static.vinwonders.com/production/choi-gi-o-phan-thiet-1.jpg"
+                                                                alt="">
+                                                            <img style="width: 100px; height: 100px;"
+                                                                class="img-fluid rounded-2 d-lg-none d-sm-block"
+                                                                src="https://static.vinwonders.com/production/choi-gi-o-phan-thiet-1.jpg"
+                                                                alt="">
+                                                        </div>
+                                                    </li>
+                                                    <li class="me-2 d-none d-sm-block">
+                                                        <div class="img">
+                                                            <img style="width: 150px; height: 150px;"
+                                                                class="img-fluid rounded-2 d-none d-lg-block"
+                                                                src="https://static.vinwonders.com/production/choi-gi-o-phan-thiet-1.jpg"
+                                                                alt="">
+                                                            <img style="width: 100px; height: 100px;"
+                                                                class="img-fluid rounded-2 d-lg-none d-sm-block"
+                                                                src="https://static.vinwonders.com/production/choi-gi-o-phan-thiet-1.jpg"
+                                                                alt="">
+                                                        </div>
+                                                    </li>
+                                                    <li class="me-2 d-none d-sm-block">
+                                                        <div class="img">
+                                                            <img style="width: 150px; height: 150px;"
+                                                                class="img-fluid rounded-2 d-none d-lg-block"
+                                                                src="https://static.vinwonders.com/production/choi-gi-o-phan-thiet-1.jpg"
+                                                                alt="">
+                                                            <img style="width: 100px; height: 100px;"
+                                                                class="img-fluid rounded-2 d-lg-none d-sm-block"
+                                                                src="https://static.vinwonders.com/production/choi-gi-o-phan-thiet-1.jpg"
+                                                                alt="">
+                                                        </div>
+                                                    </li>
+                                                    <li class="me-2 position-relative">
+                                                        <img style="width: 150px; height: 150px;"
+                                                            class="img-fluid rounded-2 d-none d-lg-block"
+                                                            src="https://static.vinwonders.com/production/choi-gi-o-phan-thiet-1.jpg"
+                                                            alt="">
+                                                        <img style="width: 100px; height: 100px;"
+                                                            class="img-fluid rounded-2 d-lg-none d-sm-block"
+                                                            src="https://static.vinwonders.com/production/choi-gi-o-phan-thiet-1.jpg"
+                                                            alt="">
+                                                        <div class="wrapper position-absolute rounded-2">
+                                                            <div
+                                                                class="w-100 h-100 d-flex align-items-center justify-content-center fs-1 text-white">
+                                                                +</div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="comment-like">
+                                                <a href="#" class="text-decoration-none text-dark">
+                                                    <i class="bi bi-hand-thumbs-up fs-5 me-2"></i>
+                                                </a>
+                                                <span class="text-capitalize">hữu ích</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <nav aria-label="...">
+                                        <ul class="d-flex justify-content-center pagination text-center">
+                                            <li class="page-item disabled">
+                                                <a class="page-link">
+                                                    <i class="bi bi-chevron-left"></i>
+                                                </a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item active" aria-current="page">
+                                                <a class="page-link" href="#">2</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">
+                                                    <i class="bi bi-chevron-right"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <!-- end -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-3">
+                        <div class="position-sticky d-none d-lg-block" style="position: -webkit-sticky;top: 0;">
+                            <div class="bg-light p-4 border rounded-2">
+                                <p class="fs-5 fw-bold text-uppercase">Tổng tiền</p>
+                                <span class="text-danger fs-4 fw-bolder mb-3">{{productdetail.sale | number}}₫</span>
+                                <button class="fw-bold btn btn-info w-100 mt-3 text-white" (click)="addCart(quantity.value)">Thêm
+                                    vào
+                                    giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="d-sm-block d-lg-none">
+        <div class="position-fixed bottom-0 w-100" style="z-index: 1000;">
+            <div class="bg-white w-100 p-3">
+                <div class="d-flex justify-content-between mb-3">
+                    <span class="text-danger fw-bolder fs-4">{{productdetail.sale | number}}₫</span>
+                    <i class="bi bi-heart fs-4"></i>
+                </div>
+                <div class="w-100">
+                    <button class="btn btn-info text-white w-100 fw-bold" (click)="addCart(quantity.value)" >Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- <div class="container my-4">
+    <div class="row d-flex justify-content-center" *ngIf="productdetail">
+        <div class=" col-md-5  p-0">
+            <img class="border border-black border-2 rounded-3 w-100 m-0" src="../assets/img/{{productdetail.image}}.jpeg" >
+        </div>
+        <div class="col-md-7 px-5">
+            <h2>TOUR {{productdetail.name}}</h2>
+            <br>
+            <h4 class="text-danger">Khuyến mãi:  {{productdetail.sale | number }} VND</h4>
+            <p>Giá gốc: <del>{{productdetail.price | number}} VND</del></p>
+            <hr>
+            <p><b>Mô tả:</b> </p>
+            <p><i class=" bi-alarm"></i> Thời gian:{{productdetail.duration}}</p>
+            <p><i class=" bi bi-airplane"></i> Phương tiện:{{productdetail.transport}}</p>
+            <p><i class=" bi bi-house"></i> Khách sạn: {{productdetail.hotel}} <i class="text-warning bi bi-star-fill"></i></p>
+            <p><i class=" bi bi-calendar-date"></i> Ngày đi:{{productdetail.start}}</p>
+            <br>
+            <div class="d-flex justify-content-between align-items-center">
+                <label class="form-label"><b>SỐ LƯỢNG:</b> </label>
+            <input type="number" class="form-control w-25" value="1" min="1">
+            <button class="btn px-4 btn-warning w-50">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p><b>➤ Giao vé tận nơi nội thành trong vòng 24h </b></p>
+            <p><b>➤ Giao vé tận nơi ngoại thành từ 1-3 ngày</b></p>
+            <div class="border border-3 border-danger p-3 rounded-3 text-success">
+                <p>Miễn phí 1 vé trẻ em khi mua 2 vé người lớn </p>
+                <p>Tặng: nón du lịch, áo du lịch, nước suối, vé buffe </p>
+                <p>Giảm 20% khi mua vé đoàn từ 20 người </p>
+                <p>Giảm 30% khi mua vé đoàn từ 40 người</p>
+                <p>Gói bảo hiểm du lịch, bảo hiểm tai nạn miễn phí</p>
+            </div>
+    </div>
+</div>
+<div class="container" *ngIf="!productdetail">
+    <h1>Không tìm thấy sản phẩm</h1>
+</div> -->

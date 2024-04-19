@@ -1,0 +1,761 @@
+<header>
+    <nav class="navbar navbar-expand-lg bg-white pt-3 border-bottom shadow-sm">
+        <div class="container-lg pb-4">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span style="width: 20px;" class="navbar-toggler-icon "></span>
+            </button>
+            <a class="navbar-brand d-lg-none d-md-block" href="" [routerLink]="['/']">
+                <img style="width: 150px;" class="img-fluid" src="../assets/img/Travel__1_-removebg-preview.png" alt="">
+            </a>
+            <button class="btn d-md-block d-lg-none position-relative" type="button">
+                <i class="bi bi-cart" [routerLink]="['/giohang']"></i>
+                <div class="position-absolute" style="top: 6px; right: 10px;">
+                    <span id="amount-cart"
+                        class="text-white position-absolute top-0 start-75 translate-middle bg-info px-2 rounded-circle">
+                        {{productService.getCartLength()}}
+                    </span>
+                </div>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-underline d-flex align-items-lg-end">
+                    <li class="d-none d-lg-block">
+                        <a class="navbar-brand" href="" [routerLink]="['/']">
+                            <img style="width: 200px;" class="img-fluid"
+                                src="../assets/img/Travel__1_-removebg-preview.png" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="fw-bold nav-link text-uppercase active" aria-current="page" href=""
+                            [routerLink]="['/']">
+                            Trang Chủ
+                        </a>
+                    </li>
+                    <li class="nav-item position-relative hover-link">
+
+                        <!-- nav-2 -->
+                        <div class="accordion accordion-flush d-lg-none d-md-block" id="accordionFlushExample">
+                            <div class="accordion-item bg-transparent">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed  pe-0 ps-0 nav-link" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <a [routerLink]="['/tourquocte']"
+                                            class="text-decoration-none  text-uppercase fw-bold bg-transparent link-opacity">
+                                            du lịch nước ngoài
+                                        </a>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="accordion-item bg-transparent border-0 bg-transparent">
+                                            <h2 class="accordion-header">
+                                                <button
+                                                    class="accordion-button collapsed text-capitalize bg-transparent link-opacity fw-bold text-decoration-none text-dark fs-6"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                                    aria-controls="panelsStayOpen-collapseTwo">
+                                                    Du lịch châu á
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <ul class="navbar navbar-nav mt-2">
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item bg-transparent border-0">
+                                            <h2 class="accordion-header">
+                                                <button
+                                                    class="accordion-button collapsed text-capitalize bg-transparent link-opacity fw-bold text-decoration-none text-dark fs-6"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                                    aria-controls="panelsStayOpen-collapseThree">
+                                                    Du lịch châu âu
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <ul class="navbar navbar-nav mt-2">
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item bg-transparent border-0">
+                                            <h2 class="accordion-header">
+                                                <button
+                                                    class="accordion-button collapsed text-capitalize bg-transparent link-opacity fw-bold text-decoration-none text-dark fs-6"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelsStayOpen-collapseFor" aria-expanded="false"
+                                                    aria-controls="panelsStayOpen-collapseFor">
+                                                    Du lịch châu úc
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseFor" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <ul class="navbar navbar-nav mt-2">
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item bg-transparent border-0">
+                                            <h2 class="accordion-header">
+                                                <button
+                                                    class="accordion-button collapsed text-capitalize bg-transparent link-opacity fw-bold text-decoration-none text-dark fs-6"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                                                    aria-controls="panelsStayOpen-collapseFive">
+                                                    Du lịch châu mỹ
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <ul class="navbar navbar-nav mt-2">
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- nav-1 -->
+                        <a class="d-none d-lg-block nav-link text-uppercase fw-bold" aria-disabled="true" href=""
+                            [routerLink]="['/tourquocte']">
+                            du lịch nước ngoài</a>
+                        <div class="nav-list position-absolute" style="width: 1000px; z-index: 2;">
+                            <div class="bg-light p-4 border rounded-2">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a class="text-capitalize fw-bold text-decoration-none text-dark fs-5"
+                                            href="">Du lịch châu á</a>
+                                        <ul class="navbar navbar-nav mt-2">
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch hàn quốc</a>
+                                            </li>
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch hàn quốc</a>
+                                            </li>
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch hàn quốc</a>
+                                            </li>
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch hàn quốc</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a class="text-capitalize fw-bold text-decoration-none text-dark fs-5"
+                                            href="">Du lịch châu âu</a>
+                                        <ul class="navbar navbar-nav mt-2">
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch hàn quốc</a>
+                                            </li>
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch hàn quốc</a>
+                                            </li>
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch hàn quốc</a>
+                                            </li>
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch hàn quốc</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a class="text-capitalize fw-bold text-decoration-none text-dark fs-5"
+                                            href="">Du lịch châu úc</a>
+                                        <ul class="navbar navbar-nav mt-2">
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch hàn quốc</a>
+                                            </li>
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch hàn quốc</a>
+                                            </li>
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch hàn quốc</a>
+                                            </li>
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch hàn quốc</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a class="text-capitalize fw-bold text-decoration-none text-dark fs-5"
+                                            href="">Du lịch châu mỹ</a>
+                                        <ul class="navbar navbar-nav mt-2">
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch hàn quốc</a>
+                                            </li>
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch hàn quốc</a>
+                                            </li>
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch hàn quốc</a>
+                                            </li>
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch hàn quốc</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item hover-link position-relative">
+
+                        <!-- nav-1 -->
+                        <div class="accordion accordion-flush d-lg-none d-md-block" id="accordionFlushExample1">
+                            <div class="accordion-item bg-transparent">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed nav-link pe-0 ps-0" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                        aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        <a [routerLink]="['/tourtrongnuoc']"
+                                            class="text-decoration-none text-uppercase fw-bold bg-transparent link-opacity">
+                                            du lịch trong nước
+                                        </a>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="accordion-item bg-transparent border-0">
+                                            <h2 class="accordion-header">
+                                                <button
+                                                    class="accordion-button collapsed text-capitalize bg-transparent link-opacity fw-bold text-decoration-none text-dark fs-6"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                                                    aria-controls="panelsStayOpen-collapseSix">
+                                                    Du lịch miền nam
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <ul class="navbar navbar-nav mt-2">
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item bg-transparent border-0">
+                                            <h2 class="accordion-header">
+                                                <button
+                                                    class="accordion-button collapsed text-capitalize bg-transparent link-opacity fw-bold text-decoration-none text-dark fs-6"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
+                                                    aria-controls="panelsStayOpen-collapseSeven">
+                                                    Du lịch miền trung
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <ul class="navbar navbar-nav mt-2">
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item bg-transparent border-0">
+                                            <h2 class="accordion-header">
+                                                <button
+                                                    class="accordion-button collapsed text-capitalize bg-transparent link-opacity fw-bold text-decoration-none text-dark fs-6"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false"
+                                                    aria-controls="panelsStayOpen-collapseEight">
+                                                    Du lịch miền bắc
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <ul class="navbar navbar-nav mt-2">
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                        <li class="nav-item mb-4">
+                                                            <a href=""
+                                                                class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                                lịch hàn quốc</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="d-none d-lg-block nav-link text-uppercase fw-bold" aria-disabled="true"
+                            [routerLink]="['/tourtrongnuoc']">
+                            du lịch trong nước</a>
+                        <div class=" nav-list position-absolute" style="width: 800px; z-index: 2;">
+                            <div class="bg-light p-4 border rounded-2">
+                                <div class="row h-100">
+                                    <div class="col-md-4">
+                                        <a class="text-capitalize fw-bold text-decoration-none text-dark fs-5"
+                                            href="">Du lịch miền nam</a>
+                                        <ul class="navbar navbar-nav mt-2">
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch TPHCM</a>
+                                            </li>
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch Bình dương</a>
+                                            </li>
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch hàn quốc</a>
+                                            </li>
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch hàn quốc</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a class="text-capitalize fw-bold text-decoration-none text-dark fs-5"
+                                            href="">Du lịch Trung</a>
+                                        <ul class="navbar navbar-nav mt-2">
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch hàn quốc</a>
+                                            </li>
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch hàn quốc</a>
+                                            </li>
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch hàn quốc</a>
+                                            </li>
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch hàn quốc</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a class="text-capitalize fw-bold text-decoration-none text-dark fs-5"
+                                            href="">Du lịch Miền bắc</a>
+                                        <ul class="navbar navbar-nav mt-2">
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch hàn quốc</a>
+                                            </li>
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch hàn quốc</a>
+                                            </li>
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch hàn quốc</a>
+                                            </li>
+                                            <li class="nav-item mb-3">
+                                                <a href=""
+                                                    class="text-decoration-none text-dark text-capitalize fw-normal">du
+                                                    lịch hàn quốc</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" [routerLink]="['/lienhe']" class="nav-link text-uppercase fw-bold"
+                            aria-disabled="true">
+                            liên hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase fw-bold" href="" [routerLink]="['/tintuc']">
+                            Tin tức</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
+
+                    <!-- cart -->
+                    <li class="nav-item d-none d-lg-block dropdown">
+                        <a class="nav-link text-uppercase position-relative" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-cart" style="font-size: 20px;"></i>
+                            <div class="position-absolute" style="top:10px; right: 10px;">
+                                <span id="amount-cart"
+                                    class="text-white position-absolute top-0 start-75 translate-middle bg-info px-2 rounded-circle">
+                                    {{productService.getCartLength()}}
+                                </span>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu translate-middle-x p-0" style="left: -380%; width: 400px;">
+                            <div class="img-space text-center p-3 border-bottom" *ngIf="cart.length === 0">
+                                <img style="height: 200px;" class="img-fluid"
+                                    src="https://bizweb.dktcdn.net/100/368/179/themes/738982/assets/empty-cart.png?1655829755743"
+                                    alt="">
+                            </div>
+
+                            <!-- product cart -->
+
+                            <div class="row">
+                                <div class="col-md-12 border-bottom" *ngFor="let p of cart">
+                                    <div class="row p-2">
+                                        <div class="col-md-4">
+                                            <div class="cart-img">
+                                                <img src="/assets/img/{{p.image}}.jpg" alt="" class="img-fluid w-100">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="cart-content">
+                                                <h6 class="fw-bold text-truncate" style="font-size: 13px;">{{p.name}}
+                                                </h6>
+                                                <p style="font-size: 12px;" class="text-capitalize text-truncate mb-0">
+                                                </p>
+                                                <p style="font-size: 12px;" class="text-capitalize mb-0">khởi
+                                                    hành: <span class="text-secondary text-truncate">{{p.start}}</span>
+                                                </p>
+                                                <p style="font-size: 12px;" class="text-capitalize mb-0">Số Vé:
+                                                    <span class="text-truncate text-secondary">{{p.quantity}}</span>
+                                                    Người lớn
+                                                </p>
+                                                <span class="text-danger ">{{p.sale*p.quantity |number}} ₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- end -->
+
+                            <div class="cart-total-nav">
+                                <div class="row">
+                                    <div class="col-md-6 p-1 ps-4">
+                                        <span class="text-capitalize fs-6">Tổng tiền ({{cart.length}} dịch vụ): </span>
+
+                                        <!-- haven't product -->
+                                        <p class="text-danger fw-bold mb-0">{{sumMoney() | number}} ₫</p>
+                                        <!-- end -->
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a [routerLink]="['/giohang']" href="" type="button"
+                                            class="  d-flex align-items-center justify-content-center rounded-0 btn btn-info text-white text-uppercase w-100 h-100 fw-bold bor-btn_cart">Xem
+                                            giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <!-- end -->
+
+                    <!-- user -->
+                    <li class="nav-item dropdown d-none d-lg-block">
+                        <h1>{{user.username}}</h1>
+                        <!-- before login -->
+                        <div class="" [hidden]="userService.isLogin()">
+                            <a class="nav-link text-uppercase" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-person-circle" style="font-size: 20px;"></i>
+                            </a>
+                            <ul class="dropdown-menu translate-middle-x" style="left: -120%;">
+                                <div class="list2">
+                                    <li><a class="dropdown-item" href="" [routerLink]="['/dangnhap']">Đăng Nhập</a></li>
+                                    <li><a class="dropdown-item" href="" [routerLink]="['/dangky']">Đăng Ký</a></li>
+                                    <li><a class="dropdown-item" href="">Quên Mật Khẩu</a></li>
+                                </div>
+                            </ul>
+                        </div>
+                        <!-- end -->
+
+                        <!-- after login -->
+                        <div class="" [hidden]="!userService.isLogin()">
+                            <a class="nav-link text-uppercase" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img style="width: 23px; height: 23px;"
+                                    class="img-fluid border border-1 border-dark rounded-circle"
+                                    src="/assets/img/{{user.image}}.jpg"
+                                    alt="">
+                            </a>
+                            <ul class="dropdown-menu translate-middle-x" style="left: -120%;">
+                                <div class="list2 border-bottom">
+                                    <li><a class="dropdown-item" href="#">Đơn hàng</a></li>
+                                    <li><a class="dropdown-item" href="#">Kiểm tra đơn hàng</a></li>
+                                    <li><a class="dropdown-item" href="#" [routerLink]="['/thongtinkhachhang']">Thông tin tài khoản</a></li>
+                                </div>
+                                <div class="list2">
+                                    <li><a class="dropdown-item" href="#" [routerLink]="['/doimatkhau']">Đổi mật khẩu</a></li>
+                                    <li><a class="dropdown-item" href="#">Yêu thích</a></li>
+                                    <li><a class="dropdown-item" href="#" (click)="userService.logOut()">Đăng xuất</a></li>
+                                </div>
+                            </ul>
+                        </div>
+                        <!-- end -->
+                    </li>
+                </ul>
+                <ul class="navbar-nav border-top d-lg-none d-md-block">
+                    <li class="nav-item mb-2">
+                        <a href="" [routerLink]="['/dangnhap']" class="fw-bold nav-link text-uppercase">Đăng nhập</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" [routerLink]="['/dangky']" class="fw-bold nav-link text-uppercase">Đăng ký</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- Banner -->
+
+
+<router-outlet />
+<footer>
+    <div class="bg-white border-top">
+        <div class="container-lg container-xl p-5">
+            <img style="width: 200px;" class="d-sm-block d-lg-none img-fluid mb-5 text-center"
+                src="img/Travel__1_-removebg-preview.png" alt="">
+            <div class="row">
+                <div class="col-lg-4 mb-3">
+                    <h5 class="fw-bold text-uppercase mb-3">thông tin liên hệ</h5>
+                    <div class="content-contact">
+                        <p>
+                            <i class="bi bi-geo-alt-fill pe-1"></i>
+                            <span>Phần mềm Quang Trung</span>
+                        </p>
+                        <p>
+                            <i class="bi bi-telephone-fill pe-1"></i>
+                            <span>(084) 961921909</span>
+                        </p>
+                        <p>
+                            <i class="bi bi-envelope-fill pe-1"></i>
+                            <span>Khoa.com</span>
+                        </p>
+                    </div>
+                    <ul class="d-flex align-items-center ps-0" style="list-style: none;">
+                        <li class="ms-2 me-2 fs-2">
+                            <a href="" class="">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="ms-2 me-2 fs-6 ps-2 pe-2 pt-1 pb-1 rounded-circle"
+                            style="background: linear-gradient(to right top, red, blue);">
+                            <a href="">
+                                <i class="bi bi-instagram text-white"></i>
+                            </a>
+                        </li>
+                        <li class="ms-2 me-2 fs-3">
+                            <a href="" class="fs-2">
+                                <i class="bi bi-youtube text-danger"></i>
+                            </a>
+                        </li>
+                        <li class="ms-2 me-2 fs-6 bg-dark pe-2 ps-2 pb-1 pt-1 rounded-circle">
+                            <a href="">
+                                <i class="bi bi-tiktok text-white"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 text-center mb-4">
+                    <div class="img mb-5 d-none d-lg-block text-center">
+                        <img class="" style="width: 200px;" src="img/Travel__1_-removebg-preview.png" alt="">
+                    </div>
+                    <div class="gift">
+                        <h5>Nhập email nhận ưu đãi</h5>
+                        <span>Nhận ưu đãi trọn gói của chúng tôi bằng cách đăng ký email!!</span>
+                        <form action="" class="mt-4 position-relative">
+                            <input class="form-control" type="text" name="" id="" placeholder="Nhập email...">
+                            <button class="btn btn-info text-white position-absolute top-0 end-0" type="button">
+                                <i class="bi bi-gift"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 text-center">
+                    <h5 class="fw-bold text-uppercase mb-4">bản đồ</h5>
+                    <div class="map">
+                        <iframe class="ratio"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4436614899205!2d106.62525347488366!3d10.8538210892997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bee0b0ef9e5%3A0x5b4da59e47aa97a8!2zQ8O0bmcgVmnDqm4gUGjhuqduIE3hu4FtIFF1YW5nIFRydW5n!5e0!3m2!1svi!2s!4v1709966839524!5m2!1svi!2s"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="text-center">Copyright 2022 by Khoa Vietnam. All rights reserved.</p>
+</footer>

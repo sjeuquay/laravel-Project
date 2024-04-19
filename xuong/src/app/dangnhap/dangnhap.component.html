@@ -1,0 +1,76 @@
+<body id="body-background" >
+    <section class="">
+        <div class="position-absolute h-100 width-login" style="width: 40%;float: left;">
+            <div class=" h-100 p-5 wrapper-login">
+                <div class="mb-5 d-sm-block d-lg-none">
+                    <a href="" [routerLink]="['/dangky']"
+                        class="text-decoration-none me-2 text-white text-uppercase">đăng ký</a>
+                </div>
+                <div class="img text-center mb-5">
+                    <img src="img/Travel__1_-removebg-preview.png" alt="" class="img-thumbnail bg-transparent border-0"
+                        style="height: 50px;">
+                </div>
+                <h2 class="mt-4 mb-5 text-center text-dark text-uppercase">Đăng nhập</h2>
+                <div class="form-login mt-5">
+                    <form action="" class="" (ngSubmit)="onSubmit()">
+                        <div class="mb-4">
+                            <input class="form-control" type="email" name="email" id="email" placeholder="Email" [(ngModel)]="email" required email>
+                            <div *ngIf="email === '' ">
+                                <small class="text-danger">Email không được bỏ trống</small>
+                            </div>
+                            <div *ngIf="email !== '' && !isEmailValid(email)">
+                                <small class="text-danger">Email không không hợp lệ</small>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <input class="form-control" type="password" name="password" placeholder="Mật khẩu" [(ngModel)]="password" required>
+                            <div *ngIf="password === '' ">
+                                <small class="text-danger">Mật khẩu không được bỏ trống</small>
+                            </div>
+                            <div *ngIf="password != '' && !isPasswordValid(password)">
+                                <small class="text-danger">Mật khẩu có ít nhất một số, một chữ, một chữ cái viết hoa và
+                                    từ 6 đến 20 ký tự</small>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-4">
+                            <div class="">
+                                <input type="checkbox" name="" id="">
+                                <label class="ps-2" for="">Nhớ mật khẩu</label>
+                            </div>
+                            <div class="">
+                                <a href="" class="text-decoration-none text-dark">Quên mật khẩu</a>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-info w-100 text-dark fw-bold" (click)=" getuser()">Đăng nhập</button>
+                    </form>
+                </div>
+                <div class="mt-4">
+                    <h5 class="text-center mb-3">Hoặc</h5>
+                    <div class="text-center d-flex justify-content-center">
+                        <div class="img me-2 ms-2" style="height: 30px;width: 30px;">
+                            <a href="" class="">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2504/2504739.png" alt=""
+                                    class="w-100 h-100 img-fluid">
+                            </a>
+                        </div>
+                        <div class="img me-2 ms-2" style="height: 30px;width: 30px;">
+                            <a href="" class="">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/2048px-2023_Facebook_icon.svg.png"
+                                    alt="" class="w-100 h-100 img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-none d-lg-block" style="width: 60%; float: right;">
+            <div class="container-xl container-lg p-5">
+                <div class="text-end">
+                    <a href="" [routerLink]="['/dangky']"
+                        class="text-decoration-none text-dark fs-6 text-dark text-uppercase me-4 fw-bold">Đăng
+                        ký</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>

@@ -1,0 +1,105 @@
+<section>
+    <div class="container-xl container-lg pt-5 pb-5">
+        <div class="row">
+            <div class="col-sm-12 col-lg-3 border-left mb-5">
+                <div class="pb-4">
+                    <a href="#" class="text-decoration-none d-flex align-items-lg-end">
+                        <img class="img-fluid border border-1 border-dark rounded-5 p-1" style="height: 30px;width: 30px;"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/OOjs_UI_icon_userAvatar-progressive.svg/1024px-OOjs_UI_icon_userAvatar-progressive.svg.png"
+                            alt="">
+                        <span class="ms-2 text-secondary text-capitalize">Sửa hồ sơ</span>
+                    </a>
+                </div>
+                <div class="pt-2 border-top">
+                    <ul class="list-group">
+                        <li class="list-group-item border-0 p-0 mt-2 mb-2">
+                            <a href="" class="list-group-item border-0 p-0 ">
+                                <i class="bi bi-gift text-danger"></i>
+                                Ưu đãi dành riêng cho bạn
+                            </a>
+                        </li>
+                        <li class="list-group-item border-0 p-0 mt-2 mb-2">
+                            <a href="" class="list-group-item border-0 p-0 ">
+                                <i class="bi bi-person-vcard text-primary "></i>
+                                Tài khoản của tôi
+                                <div class="ms-4">
+                                    <a href="" class="text-decoration-none" [routerLink]="['/thongtinkhachhang']">
+                                        <p  class="m-0 pt-2 pb-2 text-secondary text-user">Hồ sơ</p>
+                                    </a>
+                                    <a href="" class="text-decoration-none" [routerLink]="['/doimatkhau']">
+                                        <p class="text-secondary m-0 text-user">Đổi mật khẩu
+                                        </p>
+                                    </a>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item border-0 p-0 mt-2 mb-2">
+                            <a href="" class="list-group-item border-0 p-0 " [routerLink]="['/luutrudonhang']">
+                                <i class="bi bi-box2 text-success"></i>
+                                Tour đã đặt
+                            </a>
+                        </li>
+                        <li class="list-group-item border-0 p-0 mt-2 mb-2">
+                            <a href="" class="list-group-item border-0 p-0 ">
+                                <i class="bi bi-bookmark-heart text-danger"></i>
+                                Tour yêu thích
+                            </a>
+                        </li>
+                        <li class="list-group-item border-0 p-0 mt-2 mb-2">
+                            <a href="" class="list-group-item border-0 p-0 " (click)="userService.logOut()">
+                                <i class="bi bi-box-arrow-left me-1 text-info"></i>
+                                Đăng xuất
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-8">
+                <div class="pe-3 ps-3">
+                    <span class="text-capitalize fs-5">Đổi mật khẩu</span>
+                    <!-- <h1>{{user.username}}</h1> -->
+                    <p class="text-secondary">Để bảo mật tài khoản, vui lòng không chia sẻ mật khẩu cho người khác</p>
+                    <div class="d-flex align-items-center justify-content-center pt-3" >
+                        <form action="" style="width: 500px;" (ngSubmit)="onSubmit()">
+                            <div class="mb-4">
+                                <label for="">Mật khẩu hiện tại:</label>
+                                <input class="form-control" type="text" name="CurrentPassword" id="" [(ngModel)]="CurrentPassword" required>
+                                <div *ngIf="CurrentPassword === '' ">
+                                    <small class="text-danger">Mật khẩu không được bỏ trống</small>
+                                </div>
+                                <div *ngIf="CurrentPassword != '' && !isCurrentPasswordValid(CurrentPassword)">
+                                    <small class="text-danger">Mật khẩu có ít nhất một số, một chữ, một chữ cái viết hoa và
+                                        từ 6 đến 20 ký tự</small>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label for="">Mật khẩu mới:</label>
+                                <input class="form-control" type="text" name="password" id="" [(ngModel)]="password" required>
+                                <div *ngIf="password === '' ">
+                                    <small class="text-danger">Mật khẩu không được bỏ trống</small>
+                                </div>
+                                <div *ngIf="password != '' && !isPasswordValid(password)">
+                                    <small class="text-danger">Mật khẩu có ít nhất một số, một chữ, một chữ cái viết hoa và
+                                        từ 6 đến 20 ký tự</small>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label for="">Xác nhận mật khẩu mới:</label>   
+                                <input class="form-control" type="text" name="rePassword" id="" [(ngModel)]="rePassword" required>
+                                <div *ngIf="rePassword === '' ">
+                                    <small class="text-danger">Mật khẩu không được bỏ trống</small>
+                                </div>
+                                <div *ngIf="rePassword !=='' && rePassword != password ">
+                                    <small class="text-danger">Mật khẩu không trùng</small>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-info text-white fw-bold w-100">Xác nhận</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

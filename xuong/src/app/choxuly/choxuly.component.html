@@ -1,0 +1,82 @@
+<section>
+    <div class="container-xl container-lg pt-5 pb-5" style="width: 700px;">
+        <!-- don truc tiep -->
+        <div class="border rounded-2 p-3" *ngIf="order.paymethod === 'direct' ">
+            <div class="row">
+                <div class="col-sm-12 col-lg-5 border-left">
+                    <div class="">
+                        <div class="border-bottom pb-3">
+                            <span class=" fs-5 text-secondary fw-bolder">Thông tin đơn hàng</span>
+                        </div>
+                        <div class="pt-3">
+                            <div class="border-bottom">
+                                <span class="text-secondary fw-bolder">Người đặt</span>
+                                <p class="text-capitalize">{{order.username}}</p>
+                            </div>
+                            <div class="border-bottom pt-3">
+                                <span class="text-secondary fw-bolder">Mã đơn Tour</span>
+                                <p>{{order.id}}</p>
+                            </div>
+                            <div class="border-bottom pt-3">
+                                <span class="text-secondary fw-bolder">Tên Tour</span>
+                                <p class="text-truncate">{{order.name}}</p>
+                            </div>
+                            <div class="pt-3">
+                                <span class="text-secondary fw-bolder">Số tiền</span>
+                                <p class="text-danger fw-bold">{{order.total | number}} đ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-7">
+                    <div class="text-center">
+                        <span class="fw-bold text-secondary">Đơn đang chờ xử lý</span>
+                        <img src="/assets/img/shipper.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- don online -->
+        <div class="border rounded-2 p-3" *ngIf="order.paymethod === 'online'">
+            <div class="row">
+                <div class="col-sm-12 col-lg-5 border-left">
+                    <div class="">
+                        <div class="border-bottom pb-3">
+                            <span class=" fs-5 text-secondary fw-bolder">Thông tin đơn hàng</span>
+                        </div>
+                        <div class="pt-3">
+                            <div class="border-bottom">
+                                <span class="text-secondary fw-bolder">Người đặt</span>
+                                <p class="text-capitalize">{{order.username}}</p>
+                            </div>
+                            <div class="border-bottom pt-3">
+                                <span class="text-secondary fw-bolder">Mã đơn Tour</span>
+                                <p>{{order.id}}</p>
+                            </div>
+                            <div class="border-bottom pt-3">
+                                <span class="text-secondary fw-bolder">Tên Tour</span>
+                                <p class="text-truncate">{{order.name}}</p>
+                            </div>
+                            <div class="pt-3">
+                                <span class="text-secondary fw-bolder">Số tiền</span>
+                                <p class="text-danger fw-bold">{{order.total | number}} đ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-7">
+                    <div class="text-center">
+                        <span class="fw-bold text-secondary">Đơn đang chờ thanh toán</span>
+                        <img src="/assets/img/mbbank.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-5">
+            <a [routerLink]="['/']" class="text-uppercase parent-cart_icon btn btn-info text-white px-5 fs-6 fw-bold">
+                Đặt thêm tour
+                <i class="bi bi-arrow-right i-left fw-bold"></i>
+            </a>
+        </div>
+    </div>
+</section>

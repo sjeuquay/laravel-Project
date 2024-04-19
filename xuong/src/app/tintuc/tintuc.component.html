@@ -1,0 +1,137 @@
+<!-- breadcrumb -->
+<section>
+    <div class="container-xl container-lg pt-4 pb-4">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item ">
+                    <a class="text-decoration-none text-secondary text-capitalize" href="index.html">Trang
+                        chủ</a>
+                </li>
+                <li class="breadcrumb-item active text-dark fw-bold text-capitalize" aria-current="page">
+                    tin tức
+                </li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<section>
+    <div class="bg-white pb-5">
+        <div class="container-xl container-lg container-md">
+            <h1 class="text-uppercase fs-2 mb-4 border-start border-5 ps-3 border-danger">tin du lịch</h1>
+            <div class="row">
+                <div class="col-sm-12 col-lg-7 mb-4" *ngFor=" let n of NewsList | slice:0:1">
+                    <a href="" class="text-decoration-none" [routerLink]="['/chitiettintuc', n.id]">
+                        <div class="w-100 h-100 position-relative hover-news img-wrapper rounded-2">
+                            <img class="img-fluid h-100 img-news"
+                                src="/assets/img/{{n.image}}.jpg"
+                                alt="">
+                            <div class="content-news position-absolute bottom-0 p-4 w-100"
+                                style="background-color: rgba(0, 0, 0, 0.53);">
+                                <h3 class="text-uppercase text-white w-100 text-truncate">{{n.name}}</h3>
+                                <div class="d-none d-lg-block">
+                                    <div class="wrapper-content text-white hover-content w-100 ">
+                                        <p *ngFor="let i of n.blog | slice:0:2">{{i}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-lg-5">
+                    <div class="row">
+                        <div class="col-lg-12 mb-4" *ngFor=" let n of NewsList | slice:1:3">
+                            <a href="" class="text-decoration-none" [routerLink]="['/chitiettintuc', n.id]">
+                                <div class="h-100 position-relative hover-news img-wrapper rounded-2">
+                                    <img class="img-fluid h-100 img-news"
+                                        src="/assets/img/{{n.image}}.jpg"
+                                        alt="">
+                                    <div class="content-news position-absolute bottom-0 p-3 w-100"
+                                        style="background-color: rgba(0, 0, 0, 0.53);">
+                                        <h3 class="text-uppercase text-white w-100 fs-4 text-truncate">{{n.name}}</h3>
+                                        <div class="d-none d-lg-block">
+                                            <div class="wrapper-content text-white hover-content w-100 ">
+                                                <p class="text-truncate">{{n.blog}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-white">
+    <div class="container-xl container-lg">
+        <div class="row mb-5">
+            <div class="col-sm-12 col-lg-6 border-news" >
+                <div class="card mb-3 border-0" *ngFor="let n of NewsList | slice:3:6 ">
+                    <a href="" class="text-decoration-none text-dark" [routerLink]="['/chitiettintuc', n.id]">
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex align-items-center">
+                                <img src="/assets/img/{{n.image}}.jpg"
+                                    class="img-fluid rounded-start h-100" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{n.name}}</h5>
+                                    <p class="card-text text-truncate text-2_trun text-secondary">{{n.blog}}
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">
+                                            <i class="bi bi-clock"></i> {{n.time}}
+                                        </small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <div class="card mb-3 border-0" *ngFor="let n of NewsList | slice:6:9 ">
+                    <a class="text-decoration-none text-dark" [routerLink]="['/chitiettintuc', n.id]">
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex align-items-center">
+                                <img src="/assets/img/{{n.image}}.jpg"
+                                    class="img-fluid rounded-start h-100" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{n.name}}</h5>
+                                    <p class="card-text text-truncate text-2_trun text-secondary">{{n.blog}}
+                                    </p>
+                                    <p class="card-text"><small class="text-body-secondary">
+                                            <i class="bi bi-clock"></i> {{n.time}}
+                                        </small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav aria-label="..." class="d-flex justify-content-center">
+            <ul class="pagination">
+                <li class="page-item disabled">
+                    <a class="page-link">
+                        <i class="bi bi-chevron-left"></i>
+                    </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item " aria-current="page">
+                    <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</section>

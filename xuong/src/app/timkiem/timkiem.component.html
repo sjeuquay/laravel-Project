@@ -1,0 +1,101 @@
+<div class="container mt-3 mb-3">
+    <div class="d-flex justify-content-between">
+        <h4 class="mb-5"> {{productSearch.length}} kết quả tìm kiếm với từ khóa "{{keyword}}"</h4>
+        <div class="">
+            <select class="form-select w-auto me-2" [(ngModel)]="selectedSort" (change)="onSortChange()">
+                <option value="asc">Giá tăng dần</option>
+                <option value="desc">Giá giảm dần</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <!-- <div class="col-sm-6 col-md-4 col-lg-3 my-3" *ngFor="let p of productSearch">
+            <div class="card shadow position-relative">
+                <img
+                    class
+                    src="../assets/img/{{p.image}}.jpeg" 
+                    height="200px"
+                    class="card-img-top"
+                    alt="..." />
+                <div
+                    class="rounded-start-pill bg-danger text-white px-4 py-1 position-absolute end-0">
+                    Giá sốc
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-success">{{p.name}}</h5>
+                    <p class="text-danger m-0"><b>Giá: {{p.sale | number}} đ</b></p>
+                    <p class><del>Giá: {{p.price | number}} đ</del></p>
+                    <p>
+                        <i class="bi bi-alarm"></i> Thời gian:
+                        {{p.duration}}
+                        <br />
+                        <i class="bi bi-airplane"></i> Phương tiện:
+                        {{p.transport}}<br />
+                        <i class="bi bi-house"></i> Khách sạn: 
+                        {{p.hotel}} <i class="text-warning bi bi-star-fill"></i>
+                        <br>
+                        <i class="bi bi-calendar-date"></i> Ngày đi:
+                        {{p.start}}
+                    </p>
+                    <div class="text-center">
+                        <a class="btn btn-warning text-white" [routerLink]="['/chitietsanpham', p.id]">
+                            Xem chi tiết</a>                            
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 mb-4" *ngFor="let p of productSearch | slice:0:12">
+            <div class="card position-relative shadow" href="#">
+                <img height="200px" src="assets/img/{{p.image}}.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="box-title-card mb-4">
+                        <h5 class=" card-title fs-6">{{p.name}}</h5>
+                    </div>
+                    <div class="box-time-card">
+                        <p class="card-text mb-2 fw">Phương tiện:
+                            <span class="ms-2" *ngFor="let i of p.transport"><i class="{{i}}"></i></span>
+                        </p>
+                        <p class="mb-2"><i class="bi bi-clock"></i> <span class="ms-2 fw-semibold">{{p.interval}}</span>
+                        </p>
+                        <p><i class="bi bi-calendar"></i> <span class="ms-2 fw-semibold">{{p.time}}</span></p>
+                    </div>
+                    <div class="box-price row align-items-center">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="d-flex justify-content-between ">
+                                <span class="fw-bold fs-6" style="color: #d30000;">{{p.sale | number}}
+                                    đ</span>
+                                <del class="fw-bold fs-6 opacity-50">{{p.price | number}}
+                                    đ</del>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12">
+                            <a href="#" [routerLink]="['/chitietsanpham', p.id]"
+                                class="w-100 btn btn-info text-white fw-bold mt-3">Đặt
+                                Tour</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav aria-label="..." class="d-flex justify-content-center">
+        <ul class="pagination">
+            <li class="page-item disabled">
+                <a class="page-link">
+                    <i class="bi bi-chevron-left"></i>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">
+                    <i class="bi bi-chevron-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>

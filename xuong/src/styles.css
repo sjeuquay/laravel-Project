@@ -1,0 +1,325 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+.nav-list {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .hover-link:hover .nav-list {
+        display: block !important;
+    }
+
+    .border-news {
+        border-right: 2px solid rgba(0, 0, 0, 0.199);
+    }
+
+    .border-left{
+        border-right: 1px solid rgba(0, 0, 0, 0.259) ;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .width-login {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .wrapper-login {
+        position: absolute;
+        height: 190vh !important;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.642);
+    }
+}
+
+.wrapper-login {
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.642);
+}
+
+
+.link-opacity {
+    color: rgba(0, 0, 0, 0.65) !important;
+}
+
+.link-opacity:hover {
+    color: black !important;
+}
+
+.link-opacity:active {
+    color: black !important;
+}
+
+.break-w {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+    height: 33px;
+}
+
+.bor-btn_cart {
+    border-bottom-right-radius: 5px !important;
+}
+
+.text-2_trun {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+    height: 50px;
+}
+.text-1_trun {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    /* word-wrap: break-word; */
+    white-space: normal;
+    -webkit-line-clamp: 2;
+    /* height: 20px; */
+}
+.text-3_trun {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    white-space: normal;
+    -webkit-line-clamp: 4;
+    height: 90px;
+}
+
+.text-cart_trun {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+    height: 40px;
+}
+
+.tex-trun-content {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    white-space: normal;
+    -webkit-line-clamp: 1;
+    height: 20px;
+}
+
+.wrapper {
+    background-color: rgba(113, 105, 105, 0.751);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.comment-trun {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    white-space: normal;
+    -webkit-line-clamp: 5;
+    height: 120px;
+}
+
+.slider {}
+
+.slick-slider .pre-arrow {
+    position: absolute;
+    display: inline-block;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+    top: 50%;
+    z-index: 10;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.slick-slider .pre-arrow:hover {
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.slick-slider .next-arrow {
+    position: absolute;
+    display: inline-block;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+    top: 50%;
+    z-index: 10;
+    right: 0;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.slick-slider .next-arrow:hover {
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.slick-slider .pre2-arrow {
+    position: absolute;
+    display: inline-block;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+    top: 25%;
+    z-index: 10;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.slick-slider .pre2-arrow:hover {
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.slick-slider .next2-arrow {
+    position: absolute;
+    display: inline-block;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+    top: 25%;
+    z-index: 10;
+    right: 0;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.slick-slider .next2-arrow:hover {
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.hover-name_hot {
+    background-color: #fff;
+    opacity: 0.8;
+}
+
+.hover-name_hot:hover {
+    opacity: 1;
+    background-color: black;
+    color: #fff !important;
+}
+
+.wrapper-content {
+    transform: translateY(130%);
+    display: none;
+}
+
+.hover-news:hover .hover-content {
+    display: block;
+    transform: translateY(0%);
+    transition: 600ms;
+    animation: content 0.8s ease;
+}
+
+@keyframes content {
+    from {
+        transform: translateY(130%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+.img-wrapper {
+    overflow: hidden;
+}
+
+.img-news:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+#body-background {
+    background: url(./assets/img/wp9801235.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+.parent-cart_icon:hover {
+    animation: box 1s ease-in-out infinite;
+    transform: scale(1);
+    transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* Smooth */
+}
+
+@keyframes box {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.parent-cart_icon:hover .i-left{
+    position: relative;
+    left: 0;
+    animation: icon 1s ease-in-out infinite;
+    transition: 10s;
+    font-weight: 700;
+}
+
+
+
+@keyframes icon {
+    from {
+        left: 0;
+        opacity: 1;
+    }
+    to {
+        left: 40%;
+        opacity: 0;
+    }
+}
+
+.text-user:hover {
+    color: red !important;
+}

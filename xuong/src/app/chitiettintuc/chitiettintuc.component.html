@@ -1,0 +1,104 @@
+<div class="" *ngIf="newsdetail">
+    <section>
+        <div class="container-xl container-lg pt-4 pb-4">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item ">
+                        <a class="text-decoration-none text-secondary text-capitalize" href="">Trang
+                            chủ</a>
+                    </li>
+                    <li class="breadcrumb-item active text-dark text-capitalize" aria-current="page">
+                        <a class="text-decoration-none text-secondary text-capitalize" href="">
+                            tin tức</a>
+                    </li>
+                    <li class="breadcrumb-item text-dark fw-bold text-capitalize" aria-current="page">
+                        <a class="text-decoration-none text-dark text-capitalize text-capitalize" href="">
+                            {{newsdetail.name}}</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <section>
+        <div class="bg-white pt-4 pb-4 mb-3">
+            <div class="container-xl container-lg" style="width: 800px; max-width: 100%;">
+                <div class="mb-4">
+                    <h3 class="text-capitalize fs-1">{{newsdetail.name}}</h3>
+                    <span class="text-capitalize">{{newsdetail.start}}</span>
+                </div>
+                <div class="m-auto" style="width: 800px; max-width: 100%;">
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000" style="height: 400px;">
+                                <img src="/assets/img/{{newsdetail.thumbnail[0]}}.jpg"
+                                    class="img-fluid w-100 h-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000" style="height: 400px;">
+                                <img src="/assets/img/{{newsdetail.thumbnail[1]}}.jpg"
+                                    class="img-fluid w-100 h-100" alt="...">
+                            </div>
+                            <div class="carousel-item" style="height: 400px;">
+                                <img src="/assets/img/{{newsdetail.thumbnail[2]}}.jpg"
+                                    class="img-fluid w-100 h-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="content pt-5 pb-5 m-auto border-bottom" style="width: 800px; max-width: 100%;">
+                    <h5 class="text-capitalize">{{newsdetail.title}}
+                    </h5>
+                    <p class="" *ngFor="let n of newsdetail.blog | slice:0:1">
+                        {{n}}
+                    </p>
+                    <p *ngFor="let n of newsdetail.blog | slice:1:2">{{n}}
+                    </p>
+                    <div class="img">
+                        <img class="img-fluid w-100" src="/assets/img/{{newsdetail.thumbnail[2]}}.jpg" alt="" style="height: 500px !important;">
+                        <p class="text-capitalize text-center text-secondary">
+                            <i>Hình 1.1: {{newsdetail.nameImage}}</i>
+                        </p>
+                        <p *ngFor="let n of newsdetail.blog | slice:2:3">{{n}}</p>
+                    </div>
+                    <div class="img">
+                        <img class="img-fluid w-100" src="/assets/img/{{newsdetail.thumbnail[3]}}.jpg" alt="" style="height: 500px !important;">
+                        <p class="text-capitalize text-center text-secondary"><i>Hình 1.2:{{newsdetail.nameImage}}</i></p>
+                        <p *ngFor="let n of newsdetail.blog | slice:3:4">{{n}}</p>
+                    </div>
+                    <p class="text-end text-capitalize">-Tác giả Khoa-</p>
+                </div>
+                <div class="mt-5">
+                    <h4 class="text-uppercase mb-4">Viết bình luận</h4>
+                    <form action="">
+                        <div class="row">
+                            <div class="col col-6 mb-3">
+                                <input type="text" class="form-control" placeholder="Họ và tên">
+                            </div>
+                            <div class="col col-6 mb-3">
+                                <input class="form-control" type="text" name="" id="" placeholder="Email">
+                            </div>
+                            <div class="col col-12 mb-3">
+                                <textarea class="form-control" name="" id="" cols="30" rows="10"
+                                    placeholder="Viết bình luận..."></textarea>
+                            </div>
+                            <div class="w-100">
+                                <button type="button" class="btn btn-info text-white fw-bold w-30">Gửi bình
+                                    luận</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

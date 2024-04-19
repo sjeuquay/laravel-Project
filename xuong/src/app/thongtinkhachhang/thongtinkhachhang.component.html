@@ -1,0 +1,117 @@
+<section>
+    <div class="container-xl container-lg pt-5 pb-5">
+        <div class="row">
+            <div class="col-sm-12 col-lg-3 border-left mb-5">
+                <div class="pb-4">
+                    <a href="#" class="text-decoration-none d-flex align-items-lg-end">
+                        <img class="img-fluid border border-1 border-dark rounded-5 p-1"
+                            style="height: 30px;width: 30px;"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/OOjs_UI_icon_userAvatar-progressive.svg/1024px-OOjs_UI_icon_userAvatar-progressive.svg.png"
+                            alt="">
+                        <span class="ms-2 text-secondary text-capitalize">Sửa hồ sơ</span>
+                    </a>
+                </div>
+                <div class="pt-2 border-top">
+                    <ul class=" list-group">
+                        <li class="list-group-item border-0 p-0 mt-2 mb-2">
+                            <a href="" class="list-group-item border-0 p-0 ">
+                                <i class="bi bi-gift text-danger"></i>
+                                Ưu đãi dành riêng cho bạn
+                            </a>
+                        </li>
+                        <li class="list-group-item border-0 p-0 mt-2 mb-2">
+                            <a href="" class="list-group-item border-0 p-0 ">
+                                <i class="bi bi-person-vcard text-primary "></i>
+                                Tài khoản của tôi
+                                <div class="ms-4">
+                                    <a href="" class="text-decoration-none" [routerLink]="['/thongtinkhachhang']">
+                                        <p class="m-0 pt-2 pb-2 text-secondary text-user">Hồ sơ</p>
+                                    </a>
+                                    <a href="" class="text-decoration-none" [routerLink]="['/doimatkhau']">
+                                        <p class="text-secondary m-0 text-user">Đổi mật khẩu
+                                        </p>
+                                    </a>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item border-0 p-0 mt-2 mb-2">
+                            <a href="" class="list-group-item border-0 p-0 " [routerLink]="['/luutrudonhang']">
+                                <i class="bi bi-box2 text-success"></i>
+                                Tour đã đặt
+                            </a>
+                        </li>
+                        <li class="list-group-item border-0 p-0 mt-2 mb-2">
+                            <a href="" class="list-group-item border-0 p-0 ">
+                                <i class="bi bi-bookmark-heart text-danger"></i>
+                                Tour yêu thích
+                            </a>
+                        </li>
+                        <li class="list-group-item border-0 p-0 mt-2 mb-2">
+                            <a href="" class="list-group-item border-0 p-0 " (click)="userService.logOut()">
+                                <i class="bi bi-box-arrow-left me-1 text-info"></i>
+                                Đăng xuất
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-8">
+                <div class="pe-3 ps-3">
+                    <span class="text-capitalize fs-5">Hồ sơ của tôi</span>
+                    <p class="text-secondary">Quản lý thông tin hồ sơ để bảo mật tài khoản</p>
+                    <form action="" (ngSubmit)="onSubmit()">
+                        <div class="row flex-column-reverse flex-lg-row">
+                            <div class="col-sm-12 col-lg-8">
+                                <div class="mb-4">
+                                    <label for="">Họ và tên:</label>
+                                    <input class="form-control" type="text" name="username" id=""
+                                        [(ngModel)]="user.username" placeholder="Nhập họ và tên " required
+                                        user.username>
+                                        <div *ngIf="user.username === '' ">
+                                            <small class="text-danger">Tên không được bỏ trống</small>
+                                        </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="">Số điện thoại:</label>
+                                    <input class="form-control" type="tel" name="phone" id="phone"
+                                        placeholder="Số điện thoại" [value]="user.phone" [(ngModel)]="user.phone"
+                                        required>
+                                    <div *ngIf="user.phone === '' ">
+                                        <small class="text-danger">Số điện thoại không được bỏ trống</small>
+                                    </div>
+                                    <div *ngIf="user.phone !== '' && !isPhoneValid(user.phone)">
+                                        <small class="text-danger">Số điện thoại không hợp lệ</small>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="">Địa chỉ:</label>
+                                    <input class="form-control" type="text" name="address" id="address"
+                                        placeholder="Địa chỉ" [value]="user.address" [(ngModel)]="user.address"
+                                        required>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-info text-white fw-bold w-100">Xác
+                                        nhận</button>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-12 col-lg-4 mb-4">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <div class="mb-3">
+                                        <img style="height: 100px;width: 100px;" class="img-fluid border rounded-5 p-2"
+                                            [src]="imagePreview" alt="" [(ngModel)]="image">
+                                    </div>
+                                    <div class="">
+                                        <input type="file" class="form-control visually-hidden" id="inputGroupFile"
+                                            (change)="onImageChange($event)">
+                                        <label class="btn btn-outline-dark" for="inputGroupFile">Chọn ảnh</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

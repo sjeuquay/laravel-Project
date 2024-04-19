@@ -1,0 +1,40 @@
+import { Routes } from '@angular/router';
+import { TrangchuComponent } from './trangchu/trangchu.component';
+import { TourtrongnuocComponent } from './tourtrongnuoc/tourtrongnuoc.component';
+import { TourquocteComponent } from './tourquocte/tourquocte.component';
+import { LienheComponent } from './lienhe/lienhe.component';
+import { TintucComponent } from './tintuc/tintuc.component';
+import { ChitietsanphamComponent } from './chitietsanpham/chitietsanpham.component';
+import { ChitiettintucComponent } from './chitiettintuc/chitiettintuc.component';
+import { GiohangComponent } from './giohang/giohang.component';
+import { ThanhtoanComponent } from './thanhtoan/thanhtoan.component';
+import { DangkyComponent } from './dangky/dangky.component';
+import { DangnhapComponent } from './dangnhap/dangnhap.component';
+import { TimkiemComponent } from './timkiem/timkiem.component';
+import { ThongtinkhachhangComponent } from './thongtinkhachhang/thongtinkhachhang.component';
+import { DoimatkhauComponent } from './doimatkhau/doimatkhau.component';
+import { ChoxulyComponent } from './choxuly/choxuly.component';
+import { LuutrudonhangComponent } from './luutrudonhang/luutrudonhang.component';
+import { ChitietdonhangComponent } from './chitietdonhang/chitietdonhang.component';
+
+export const routes: Routes = [
+    { path: '', component: TrangchuComponent },
+    { path: 'trangchu', component: TrangchuComponent },
+    { path: 'tourtrongnuoc', component: TourtrongnuocComponent },
+    { path: 'tourquocte', component: TourquocteComponent },
+    { path: 'lienhe', component: LienheComponent },
+    { path: 'giohang', component: GiohangComponent },
+    { path: 'thanhtoan', component: ThanhtoanComponent },
+    { path: 'tintuc', component: TintucComponent },
+    { path: 'dangky', component: DangkyComponent },
+    { path: 'timkiem', component: TimkiemComponent },
+    { path: 'dangnhap', component: DangnhapComponent },
+    { path: 'thanhtoan', component: ThanhtoanComponent },
+    { path: 'luutrudonhang', component: LuutrudonhangComponent },
+    { path: 'chitietdonhang', component: ChitietdonhangComponent },
+    { path: 'choxuly', component: ChoxulyComponent },
+    { path: 'chitiettintuc/:id', component: ChitiettintucComponent },
+    { path: 'chitietsanpham/:id', component: ChitietsanphamComponent },
+    { path: 'doimatkhau', component: DoimatkhauComponent },
+    { path: 'thongtinkhachhang', component: ThongtinkhachhangComponent }
+];

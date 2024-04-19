@@ -1,0 +1,134 @@
+<section  *ngIf="cart.length > 0">
+    <div class="container-xl container-lg container-lg mt-4">
+        <h1 class="text-uppercase fs-3">Giỏ hàng</h1>
+    </div>
+</section>
+
+<section>
+    <div class="container-xl container-lg">
+        <div class="text-center p-4" *ngIf="cart.length === 0">
+            <h1 class="text-uppercase fs-3">Giỏ hàng đang trống</h1>
+            <p>Mua gì thêm điiiiii</p>
+            <img class="img-fluid" src="https://barkit.vn/public/catalog/assets/img/empty-cart.webp" alt="">
+            <div class="">
+                <div class="spinner-grow text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-secondary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-success" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-danger" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-warning" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-info" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-light" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-dark" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+            <div class="p-5">
+                <a [routerLink]="['/']" class="text-uppercase parent-cart_icon btn btn-info text-white px-5 fs-6 fw-bold">
+                    Đặt thêm tour
+                    <i class="bi bi-arrow-right i-left fw-bold"></i>
+                </a>
+            </div>
+        </div>
+        <div class="row" *ngIf="cart.length > 0">
+            <div class="col-sm-12 col-lg-12">
+                <div
+                    class="mt-4 select-item_cart d-flex justify-content-between align-items-center bg-body-tertiary p-3 rounded-4 mb-4">
+                    <div class="">
+                        <input class="ms-2" type="checkbox" name="" id="" [(ngModel)]="selectAll" (change)="toggleAll($event)">
+                        <label class="ps-2" for="">Tất cả</label>
+                    </div>
+                    <div class="delete-item border rounded-5 p-2 border-1 border-dark">
+                        <button class="bg-transparent border-0" (click)="deleteAllCart(cart.id)">Xóa dịch vụ đã chọn</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 mb-4" *ngFor="let p of cart">
+                        <div class="cart-table bg-body-tertiary p-4 rounded-4 position-relative">
+                            <div class="d-none d-lg-block icon-cart-action position-absolute end-0 bottom-0 pe-4 pb-4">
+                                <a (click)="deleteCart(p.id)">
+                                    <i class="bi bi-trash"></i>
+                                </a>
+                            </div>
+
+                            <div class="d-sm-block d-lg-none icon-cart-action position-absolute end-0 top-0 pe-4 pt-4">
+                                <!-- <i class="bi bi-trash" (click)="deleteCart(p.id)"></i> -->
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-md-1 text-start">
+                                    <input type="checkbox" name="" id="" [(ngModel)]="item1" selectAll (change)="updateSelectAll()">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-4">
+                                            <div class="cart-table_img mt-3 mb-3">
+                                                <img style="width: 150px; height: 100px;"
+                                                    src="/assets/img/{{p.image}}.jpg" alt=""
+                                                    class="img-fluid rounded-4 d-none d-lg-block">
+                                                <img style="height:150px;" src="/assets/img/{{p.image}}.jpg" alt=""
+                                                    class="d-sm-block d-lg-none w-100 img-fluid rounded-4">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h4 class="text-capitalize fs-6 text-truncate text-cart_trun">{{p.name}}
+                                            </h4>
+                                            <span style="font-size: 13px;"
+                                                class="text-truncate tex-trun-content">{{p.review}}</span>
+                                            <span style="font-size: 13px;" class="text-truncate">{{p.start}}</span>
+                                            <p class="text-danger fw-bold mb-0 mt-1">{{p.sale | number}} ₫</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 text-end mt-3 mb-3">
+                                    <div class="quantity d-flex mb-3 align-items-center">
+                                        <p class="m-0 text-capitalize w-100 text-start" style="font-size: 15px;"> vé
+                                        </p>
+                                        <div class="quantity-qure w-100">
+                                            <input type="number" class="form-control" min="1" [(ngModel)]="p.quantity">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="text-danger fw-bold text-end">{{p.sale*p.quantity |number}} ₫</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-12 mt-1">
+                <div class="bg-body-tertiary rounded-3 p-3">
+                    <!-- <h3 class="text-uppercase fw-bold fs-5 pb-3">Hóa đơn</h3> -->
+                    <div class="row align-items-center pt-3 pb-2">
+                        <div class="col col-6">
+                            <span class="text-capitalize fw-bold">Tổng tiền:</span>
+                        </div>
+                        <div class="col col-6 text-end">
+                            <span class="text-danger fw-bold">{{sumMoney() | number}} ₫</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-cart mt-3 mb-4 text-end">
+                    <a [routerLink]="['/thanhtoan']" class="text-decoration-none">
+                        <button class="fw-bold  btn btn-primary text-uppercase">Thanh
+                            toán</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

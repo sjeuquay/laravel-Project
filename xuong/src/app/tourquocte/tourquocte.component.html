@@ -1,0 +1,132 @@
+<section>
+    <div class="container-xl container-lg pt-4 pb-4">
+        <div class="d-flex justify-content-between flex-column flex-lg-row">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item ">
+                        <a class="text-decoration-none text-secondary text-capitalize" href="index.html">Trang
+                            chủ</a>
+                    </li>
+                    <li class="breadcrumb-item active text-dark fw-bold text-capitalize" aria-current="page">Du
+                        lịch
+                        nước ngoài</li>
+                </ol>
+            </nav>
+            <div class="filter d-flex align-items-center">
+                <div class="row align-items-center">
+                    <div class="col-md-4 col-sm-12">
+                        <span class=" text-capitalize">Hiển thị tour</span>
+                    </div>
+                    <div class="col-md-6 d-flex">
+                        <select class="form-select w-auto me-2" [(ngModel)]="selectedSort" (change)="onSortChange()">
+                            <option value="asc">Giá tăng dần</option>
+                            <option value="desc">Giá giảm dần</option>
+                        </select>
+                        <select class="form-select w-auto" [(ngModel)]="selectedType" (change)="filterProductsByType()">
+                            <option value="">Tất cả</option>
+                            <option *ngFor="let type of uniqueTypes" [value]="type">{{ type }}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container-xl container-lg">
+        <div class="row flex-column-reverse flex-sm-column-reverse flex-lg-row">
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-4" *ngFor="let t of filteredProducts | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPage }">
+                        <div class="card text-decoration-none">
+                            <img height="200px" src="/assets/img/{{t.image}}.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="box-title-card mb-4">
+                                    <h5 class="card-title fs-6">{{t.name}}</h5>
+                                </div>
+                                <div class="box-time-card">
+                                    <p class="card-text mb-2 fw">Phương tiện:
+                                        <span class="ms-2 " *ngFor="let i of t.transport">
+                                            <i class="{{i}}"></i>
+                                        </span>
+                                    </p>
+                                    <p class="mb-2"><i class="bi bi-clock"></i> <span
+                                            class="ms-2 fw-semibold">{{t.interval}}</span></p>
+                                    <p><i class="bi bi-calendar"></i> <span class="ms-2 fw-semibold">{{t.time}}</span>
+                                    </p>
+                                </div>
+                                <div class="box-price row align-items-center">
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="d-flex justify-content-between ">
+                                            <span class="fw-bold fs-6" style="color: #d30000;">{{t.sale | number}}
+                                                đ</span>
+                                            <del class="fw-bold fs-6 opacity-50">{{t.price | number}}
+                                                đ</del>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12">
+                                        <a [routerLink]="['/chitietsanpham', t.id]" href="#"
+                                            class="w-100 btn btn-info text-white fw-bold mt-3">Đặt
+                                            Tour</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav aria-label="..." class="d-flex justify-content-center">
+                    <pagination-controls (pageChange)="currentPage = $event"></pagination-controls>
+                </nav>
+            </div>
+            <div class="col-lg-3 mb-5">
+                <label for="customRange1" class="form-label">Giá Tour: <span id="price" class="text-danger"></span><span
+                        class="text-danger">đ</span></label>
+                <input type="range" class="form-range" id="customRange1" min="0" max="30000000" value="0">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button bg-light text-dark fw-bold text-uppercase" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                aria-controls="collapseOne">
+                                Nơi khởi hành
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <form action="">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">TP.HCM</label>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-light text-dark fw-bold text-uppercase"
+                                type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapsecollapseNice" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapsecollapseNice">
+                                Điểm đến
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapsecollapseNice" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <form action="">
+                                    <ul class="list-group w-100 p-0" style="list-style: none;">
+                                        <li class="w-100 list-group-item border-0 border-bottom p-0 pb-3" *ngFor="let d of uniqueDestination" >
+                                            <!-- <h1>{{d}}</h1> -->
+                                            <input type="radio" class="me-2" name="{{selectedDestination}}" [value]="d" [(ngModel)]="selectedDestination" (change)="filterProductsBydDestination()">
+                                            <label for="" class="text-uppercase" >{{d}}</label>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

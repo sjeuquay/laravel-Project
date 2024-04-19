@@ -1,0 +1,1416 @@
+{
+  "products": [
+    {
+      "id": "p1",
+      "hot": 1,
+      "kind": "trong nước",
+      "type": "Miền Trung",
+      "destination": "Phan thiết",
+      "image": "phanthiet",
+      "thumbnail": [
+        "phanthiet1",
+        "phanthiet2",
+        "phanthiet3",
+        "phanthiet4"
+      ],
+      "name": "Phan Thiet Mui Ne Day Tour From Ho Chi Minh With 2D1N Optional",
+      "review": "Combo Du Thuyền Sài Gòn Và Ăn Tối (Set Menu 3 Món)",
+      "start": "20/3/2024",
+      "interval": "3 ngày 2 đêm",
+      "time": "hàng năm",
+      "transport": [
+        "bi bi-airplane-fill",
+        "bi bi-car-front-fill"
+      ],
+      "price": 45000000,
+      "sale": 25000000,
+      "preferential": [
+        "Giảm tối đa 10%",
+        "Tiết kiệm chỉ phí"
+      ]
+    },
+    {
+      "id": "p2",
+      "hot": 0,
+      "kind": "trong nước",
+      "type": "Đông Bắc Bộ",
+      "destination": "Vịnh Hạ Long",
+      "image": "halong",
+      "thumbnail": [
+        "halong1",
+        "halong2",
+        "halong3",
+        "halong4"
+      ],
+      "name": "Hạ Long 2 Ngày 1 Đêm",
+      "review": "Combo Du Thuyền Sài Gòn Và Ăn Tối (Set Menu 3 Món)",
+      "start": "24/3/2024",
+      "interval": "2 ngày 1 đêm",
+      "time": "Tháng 8, 7, 10",
+      "transport": [
+        "bi bi-airplane-fill",
+        "bi bi-car-front-fill"
+      ],
+      "price": 35000000,
+      "sale": 24000000,
+      "preferential": [
+        "Miễn phí ẩm thực địa phương",
+        "Hướng dẫn viên tiếng Anh"
+      ]
+    },
+    {
+      "id": "p3",
+      "hot": 1,
+      "kind": "trong nước",
+      "type": "Nam Trung Bộ",
+      "destination": "Đà Nẵng",
+      "image": "danang",
+      "thumbnail": [
+        "danang1",
+        "danang2",
+        "danang3",
+        "danang4"
+      ],
+      "name": "Du Lịch Đà Nẵng - Hội An 3 Ngày 2 Đêm",
+      "review": "Combo Du Thuyền Sài Gòn Và Ăn Tối (Set Menu 3 Món)",
+      "start": "20/3/2024",
+      "interval": "3 ngày 2 đêm",
+      "time": "Tháng 8, 7, 10",
+      "transport": [
+        "bi bi-airplane-fill",
+        "bi bi-car-front-fill"
+      ],
+      "price": 50000000,
+      "sale": 30000000,
+      "preferential": [
+        "Giảm 20% cho trẻ em",
+        "Khách sạn tiêu chuẩn 4 sao"
+      ]
+    },
+    {
+      "id": "p4",
+      "hot": 1,
+      "kind": "quốc tế",
+      "type": "Châu Á",
+      "destination": "Singapore",
+      "nation": 1,
+      "nameNation": "singapore",
+      "image": "singapore",
+      "thumbnail": [
+        "singapore1",
+        "singapore2",
+        "singapore3",
+        "singapore4"
+      ],
+      "name": "Tour Singapore - Malaysia 5 Ngày 4 Đêm",
+      "review": "Combo Du Thuyền Sài Gòn Và Ăn Tối (Set Menu 3 Món)",
+      "start": "20/3/2024",
+      "interval": "5 ngày 4 đêm",
+      "time": "Tháng 8, 7, 10",
+      "transport": [
+        "bi bi-airplane-fill",
+        "bi bi-car-front-fill"
+      ],
+      "price": 80000000,
+      "sale": 24000000,
+      "preferential": [
+        "Bao gồm vé tham quan",
+        "Hướng dẫn viên nói tiếng Việt"
+      ]
+    },
+    {
+      "id": "p5",
+      "hot": 0,
+      "kind": "quốc tế",
+      "type": "Châu Á",
+      "destination": "Nhật",
+      "nation": 1,
+      "nameNation": "tokyo",
+      "image": "tokyo",
+      "thumbnail": [
+        "tokyo1",
+        "tokyo2",
+        "tokyo3",
+        "tokyo4"
+      ],
+      "name": "Du Lịch Tokyo - Nhật Bản 7 Ngày 6 Đêm",
+      "review": "Combo Du Thuyền Sài Gòn Và Ăn Tối (Set Menu 3 Món)",
+      "start": "20/3/2024",
+      "interval": "7 ngày 6 đêm",
+      "time": "Tháng 1, 4, 9",
+      "transport": [
+        "bi bi-airplane-fill",
+        "bi bi-car-front-fill"
+      ],
+      "price": 120000000,
+      "sale": 84000000,
+      "preferential": [
+        "Khách sạn tiêu chuẩn 5 sao",
+        "Bữa ăn địa phương"
+      ]
+    },
+    {
+      "id": "p6",
+      "hot": 1,
+      "kind": "quốc tế",
+      "type": "Châu Đại Dương",
+      "destination": "Úc",
+      "nation": 1,
+      "nameNation": "Úc",
+      "image": "uc",
+      "thumbnail": [
+        "uc1",
+        "uc2",
+        "uc3",
+        "uc4"
+      ],
+      "name": "Tour Sydney - Úc 10 Ngày 9 Đêm",
+      "review": "Combo Du Thuyền Sài Gòn Và Ăn Tối (Set Menu 3 Món)",
+      "start": "20/3/2024",
+      "interval": "10 ngày 9 đêm",
+      "time": "Tháng 1, 4, 9",
+      "transport": [
+        "bi bi-airplane-fill",
+        "bi bi-car-front-fill"
+      ],
+      "price": 150000000,
+      "sale": 100000000,
+      "preferential": [
+        "Bao gồm vé tham quan",
+        "Khách sạn tiêu chuẩn 5 sao"
+      ]
+    },
+    {
+      "id": "p7",
+      "hot": 0,
+      "kind": "trong nước",
+      "type": "Miền Trung",
+      "destination": "Huế",
+      "image": "hue",
+      "thumbnail": [
+        "hue1",
+        "hue2",
+        "hue3",
+        "hue4"
+      ],
+      "name": "Du Lịch Huế - Huế 3 Ngày 2 Đêm",
+      "review": "Combo du lịch huế",
+      "start": "20/3/2024",
+      "interval": "3 ngày 2 đêm",
+      "time": "Tháng 1, 4, 9",
+      "transport": [
+        "bi bi-airplane-fill",
+        "bi bi-car-front-fill"
+      ],
+      "price": 40000000,
+      "sale": 24000000,
+      "preferential": [
+        "Miễn phí tham quan các di tích lịch sử",
+        "Khách sạn tiêu chuẩn 4 sao"
+      ]
+    },
+    {
+      "id": "p8",
+      "hot": 1,
+      "kind": "quốc tế",
+      "type": "Châu Á",
+      "destination": "Thái Lan",
+      "nation": 1,
+      "nameNation": "Thái Lan",
+      "image": "thailan",
+      "thumbnail": [
+        "thailan1",
+        "thailan2",
+        "thailan3",
+        "thailan4"
+      ],
+      "name": "Tour Bangkok - Thái Lan 4 Ngày 3 Đêm",
+      "review": "Combo Du Thuyền Sài Gòn Và Ăn Tối (Set Menu 3 Món)",
+      "start": "20/3/2024",
+      "interval": "4 ngày 3 đêm",
+      "time": "Tháng 1, 4, 9",
+      "transport": [
+        "bi bi-airplane-fill",
+        "bi bi-car-front-fill"
+      ],
+      "price": 60000000,
+      "sale": 40000000,
+      "preferential": [
+        "Miễn phí vé tham quan",
+        "Khách sạn tiêu chuẩn 4 sao"
+      ]
+    },
+    {
+      "id": "p9",
+      "hot": 0,
+      "kind": "trong nước",
+      "type": "Tây Nam Bộ",
+      "destination": "Cần Thơ",
+      "image": "cantho",
+      "thumbnail": [
+        "cantho1",
+        "cantho2",
+        "cantho3",
+        "cantho4"
+      ],
+      "name": "Du Lịch Cần Thơ - Cần Thơ 2 Ngày 1 Đêm",
+      "review": "Combo Du Thuyền Sài Gòn Và Ăn Tối (Set Menu 3 Món)",
+      "start": "20/3/2024",
+      "interval": "2 ngày 1 đêm",
+      "time": "hàng năm",
+      "transport": [
+        "bi bi-airplane-fill",
+        "bi bi-boat-fill"
+      ],
+      "price": 30000000,
+      "sale": 24000000,
+      "preferential": [
+        "Miễn phí tham quan khu du lịch nổi",
+        "Hướng dẫn viên nói tiếng Anh"
+      ]
+    },
+    {
+      "id": "p10",
+      "hot": 1,
+      "kind": "quốc tế",
+      "type": "Châu Á",
+      "destination": "Hàn Quốc",
+      "nation": 1,
+      "nameNation": "Hàn Quốc",
+      "image": "hanquoc",
+      "thumbnail": [
+        "hanquoc1",
+        "hanquoc2",
+        "hanquoc3",
+        "hanquoc4"
+      ],
+      "name": "Tour Seoul - Hàn Quốc 5 Ngày 4 Đêm",
+      "review": "Combo Du Thuyền Sài Gòn Và Ăn Tối (Set Menu 3 Món)",
+      "start": "20/3/2024",
+      "interval": "5 ngày 4 đêm",
+      "time": "hàng năm",
+      "transport": [
+        "bi bi-airplane-fill",
+        "bi bi-car-front-fill"
+      ],
+      "price": 75000000,
+      "sale": 55000000,
+      "preferential": [
+        "Bao gồm vé tham quan các điểm du lịch nổi tiếng",
+        "Khách sạn tiêu chuẩn 4 sao"
+      ]
+    },
+    {
+      "id": "p11",
+      "hot": 0,
+      "kind": "trong nước",
+      "type": "Đông Nam Bộ",
+      "destination": "Vũng tàu",
+      "image": "vungtau",
+      "thumbnail": [
+        "vungtau1",
+        "vungtau2",
+        "vungtau3",
+        "vungtau4"
+      ],
+      "name": "Du Lịch Sài Gòn - Vũng Tàu 2 Ngày 1 Đêm",
+      "review": "Combo Du Thuyền Sài Gòn Và Ăn Tối (Set Menu 3 Món)",
+      "start": "20/3/2024",
+      "interval": "2 ngày 1 đêm",
+      "time": "hàng năm",
+      "transport": [
+        "bi bi-car-front-fill",
+        "bi bi-car-front-fill"
+      ],
+      "price": 35000000,
+      "sale": 24000000,
+      "preferential": [
+        "Khách sạn gần bãi biển",
+        "Miễn phí bữa ăn sáng"
+      ]
+    },
+    {
+      "id": "p12",
+      "hot": 1,
+      "kind": "quốc tế",
+      "type": "Châu Âu",
+      "destination": "Pháp",
+      "nation": 1,
+      "nameNation": "Pháp",
+      "image": "phap",
+      "thumbnail": [
+        "phap1",
+        "phap2",
+        "phap3",
+        "phap4"
+      ],
+      "name": "Tour Paris - Pháp 7 Ngày 6 Đêm",
+      "review": "Combo Du Thuyền Sài Gòn Và Ăn Tối (Set Menu 3 Món)",
+      "start": "20/3/2024",
+      "interval": "7 ngày 6 đêm",
+      "time": "hàng năm",
+      "transport": [
+        "bi bi-airplane-fill",
+        "bi bi-car-front-fill"
+      ],
+      "price": 110000000,
+      "sale": 84000000,
+      "preferential": [
+        "Thưởng thức ẩm thực Pháp truyền thống",
+        "Hướng dẫn viên nói tiếng Pháp"
+      ]
+    },
+    {
+      "id": "p13",
+      "hot": 0,
+      "kind": "trong nước",
+      "type": "Nam Trung Bộ",
+      "destination": "Nha Trang",
+      "image": "nhatrang",
+      "thumbnail": [
+        "nhatrang1",
+        "nhatrang2",
+        "nhatrang3",
+        "nhatrang4"
+      ],
+      "name": "Du Lịch Nha Trang - Nha Trang 3 Ngày 2 Đêm",
+      "review": "Combo Du Thuyền Sài Gòn Và Ăn Tối (Set Menu 3 Món)",
+      "start": "20/3/2024",
+      "interval": "3 ngày 2 đêm",
+      "time": "hàng năm",
+      "transport": [
+        "bi bi-airplane-fill",
+        "bi bi-car-front-fill"
+      ],
+      "price": 45000000,
+      "sale": 24000000,
+      "preferential": [
+        "Miễn phí tham quan các địa điểm nổi tiếng",
+        "Khách sạn tiêu chuẩn 4 sao"
+      ]
+    },
+    {
+      "id": "p14",
+      "hot": 1,
+      "kind": "quốc tế",
+      "type": "Châu Á",
+      "destination": "Đubai",
+      "nation": 1,
+      "nameNation": "Đu Bai",
+      "image": "dubai",
+      "thumbnail": [
+        "dubai1",
+        "dubai2",
+        "dubai3",
+        "dubai4"
+      ],
+      "name": "Tour Dubai - Các Tiểu Vương Quốc 6 Ngày 5 Đêm",
+      "review": "Combo Du Thuyền Sài Gòn Và Ăn Tối (Set Menu 3 Món)",
+      "start": "20/3/2024",
+      "interval": "6 ngày 5 đêm",
+      "time": "hàng năm",
+      "transport": [
+        "bi bi-airplane-fill",
+        "bi bi-car-front-fill"
+      ],
+      "price": 90000000,
+      "sale": 60000000,
+      "preferential": [
+        "Miễn phí tham quan tháp Burj Khalifa",
+        "Khách sạn tiêu chuẩn 5 sao"
+      ]
+    },
+    {
+      "id": "p15",
+      "hot": 0,
+      "kind": "trong nước",
+      "type": "Miền Nam",
+      "destination": "Phú Quốc",
+      "image": "phuquoc",
+      "thumbnail": [
+        "phuquoc1",
+        "phuquoc2",
+        "phuquoc3",
+        "phuquoc4"
+      ],
+      "name": "Du Lịch Phú Quốc - Phú Quốc 4 Ngày 3 Đêm",
+      "review": "Combo Du Thuyền Sài Gòn Và Ăn Tối (Set Menu 3 Món)",
+      "start": "20/3/2024",
+      "interval": "4 ngày 3 đêm",
+      "time": "hàng năm",
+      "transport": [
+        "bi bi-airplane-fill",
+        "bi bi-boat-fill"
+      ],
+      "price": 55000000,
+      "sale": 24000000,
+      "preferential": [
+        "Miễn phí tham quan các địa điểm du lịch đảo",
+        "Khách sạn tiêu chuẩn 4 sao"
+      ]
+    },
+    {
+      "id": "p16",
+      "hot": 1,
+      "kind": "quốc tế",
+      "type": "Châu Á",
+      "destination": "Nhật",
+      "image": "kyoto",
+      "thumbnail": [
+        "kyoto1",
+        "kyoto2",
+        "kyoto3",
+        "kyoto4"
+      ],
+      "name": "Tour Tokyo - Kyoto - Osaka 8 Ngày 7 Đêm",
+      "review": "Combo Du Thuyền Sài Gòn Và Ăn Tối (Set Menu 3 Món)",
+      "start": "20/3/2024",
+      "interval": "8 ngày 7 đêm",
+      "time": "hàng năm",
+      "transport": [
+        "bi bi-airplane-fill",
+        "bi bi-car-front-fill"
+      ],
+      "price": 125000000,
+      "sale": 24000000,
+      "preferential": [
+        "Bao gồm vé tham quan các địa điểm nổi tiếng",
+        "Hướng dẫn viên nói tiếng Nhật"
+      ]
+    },
+    {
+      "id": "p17",
+      "hot": 0,
+      "kind": "trong nước",
+      "type": "Miền Tây",
+      "destination": "Đồng Tháp",
+      "image": "dongthap",
+      "thumbnail": [
+        "dongthap1",
+        "dongthap2",
+        "dongthap3",
+        "dongthap4"
+      ],
+      "name": "Du Lịch Đồng Tháp - Đồng Tháp 2 Ngày 1 Đêm",
+      "review": "Combo Du Thuyền Sài Gòn Và Ăn Tối (Set Menu 3 Món)",
+      "start": "20/3/2024",
+      "interval": "2 ngày 1 đêm",
+      "time": "hàng năm",
+      "transport": [
+        "bi bi-car-front-fill",
+        "bi bi-bike-fill"
+      ],
+      "price": 25000000,
+      "sale": 24000000,
+      "preferential": [
+        "Miễn phí vé tham quan các khu di tích lịch sử",
+        "Hướng dẫn viên nói tiếng Việt"
+      ]
+    },
+    {
+      "id": "p18",
+      "hot": 1,
+      "kind": "quốc tế",
+      "type": "Châu Âu",
+      "destination": "Anh",
+      "nation": 1,
+      "nameNation": "Anh",
+      "image": "london",
+      "thumbnail": [
+        "london1",
+        "london2",
+        "london3",
+        "london4"
+      ],
+      "name": "Tour London - Anh 6 Ngày 5 Đêm",
+      "review": "Combo Du Thuyền Sài Gòn Và Ăn Tối (Set Menu 3 Món)",
+      "start": "20/3/2024",
+      "interval": "6 ngày 5 đêm",
+      "time": "hàng năm",
+      "transport": [
+        "bi bi-airplane-fill",
+        "bi bi-car-front-fill"
+      ],
+      "price": 95000000,
+      "sale": 24000000,
+      "preferential": [
+        "Bao gồm vé tham quan các điểm du lịch nổi tiếng",
+        "Hướng dẫn viên nói tiếng Anh"
+      ]
+    },
+    {
+      "id": "p19",
+      "hot": 0,
+      "kind": "trong nước",
+      "type": "Miền Trung",
+      "destination": "Đà Lạt",
+      "image": "dalat",
+      "thumbnail": [
+        "dalat1",
+        "dalat2",
+        "dalat3",
+        "dalat4"
+      ],
+      "name": "Du Lịch Đà Lạt - Đà Lạt 3 Ngày 2 Đêm",
+      "review": "Combo Du Thuyền Sài Gòn Và Ăn Tối (Set Menu 3 Món)",
+      "start": "20/3/2024",
+      "interval": "3 ngày 2 đêm",
+      "time": "hàng năm",
+      "transport": [
+        "bi bi-airplane-fill",
+        "bi bi-car-front-fill"
+      ],
+      "price": 42000000,
+      "sale": 24000000,
+      "preferential": [
+        "Miễn phí tham quan các điểm du lịch nổi tiếng",
+        "Khách sạn tiêu chuẩn 4 sao"
+      ]
+    },
+    {
+      "id": "p20",
+      "hot": 1,
+      "kind": "quốc tế",
+      "type": "Bắc Mỹ",
+      "destination": "Mỹ",
+      "nation": 1,
+      "nameNation": "Mỹ",
+      "image": "my",
+      "thumbnail": [
+        "my1",
+        "my2",
+        "my3",
+        "my4"
+      ],
+      "name": "Tour New York - Mỹ 7 Ngày 6 Đêm",
+      "review": "Combo Du Thuyền Sài Gòn Và Ăn Tối (Set Menu 3 Món)",
+      "start": "20/3/2024",
+      "interval": "7 ngày 6 đêm",
+      "time": "hàng năm",
+      "transport": [
+        "bi bi-airplane-fill",
+        "bi bi-car-front-fill"
+      ],
+      "price": 115000000,
+      "sale": 24000000,
+      "preferential": [
+        "Bao gồm vé tham quan các điểm du lịch nổi tiếng",
+        "Hướng dẫn viên nói tiếng Anh"
+      ]
+    },
+    {
+      "id": "p21",
+      "hot": 0,
+      "kind": "trong nước",
+      "type": "Miền Trung",
+      "destination": "Hội An",
+      "image": "hoian",
+      "thumbnail": [
+        "hoian1",
+        "hoian2",
+        "hoian3",
+        "hoian4"
+      ],
+      "name": "Du Lịch Hội An - Hội An 2 Ngày 1 Đêm",
+      "review": "Combo Du Thuyền Sài Gòn Và Ăn Tối (Set Menu 3 Món)",
+      "start": "20/3/2024",
+      "interval": "2 ngày 1 đêm",
+      "time": "hàng năm",
+      "transport": [
+        "bi bi-car-front-fill",
+        "bi bi-bike-fill"
+      ],
+      "price": 32000000,
+      "sale": 24000000,
+      "preferential": [
+        "Miễn phí tham quan phố cổ",
+        "Hướng dẫn viên nói tiếng Việt"
+      ]
+    }
+  ],
+  "customers": [
+    {
+      "id": "c1",
+      "image": "avatar",
+      "star": [
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill"
+      ],
+      "name": "Nguyễn Trần Thùy Ngọc",
+      "address": "quận 9, TPHCM",
+      "comment": "Đại diện cho nhóm cá hộp 13 người, chân thành cảm ơn em Thắng, bé Lan và anh Tài color-man rất nhiều vì đã hộ trợ GĐ anh trong chuyến đi khám phá xứ sở kim chi rất là nhiệt tình, chân thành cảm ơn!!!",
+      "thumbnail": [
+        "dalat1, dalat2, dalat3, dalat4"
+      ],
+      "gender": false,
+      "location": "dalat"
+    },
+    {
+      "id": "c2",
+      "image": "avatar1",
+      "star": [
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill"
+      ],
+      "name": "Lee Jong Suk",
+      "address": "quận 12, TPHCM",
+      "comment": "Trong chuyến đi Phan Thiết cùng công ty, tôi cảm thấy rất hài lòng, đặc biệt là team building vui lắm luôn, hướng dẫn viên vui vẻ nhiệt tình, thức ăn ngon và resort rất tuyệt với. Xin chân thành cảm ơn Intertour đã tổ chức cho chúng tôi một chuyến đi thật sự rất kỷ niệm.",
+      "thumbnail": [
+        "hanquoc1, hanquoc2, hanquoc3, hanquoc4"
+      ],
+      "gender": true,
+      "location": "hanquoc"
+    },
+    {
+      "id": "c3",
+      "image": "avatar2",
+      "star": [
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill"
+      ],
+      "name": "Trần Văn A",
+      "address": "quận Tân Bình, TPHCM",
+      "comment": "Chuyến đi Hội An - Huế rất là thú vị và ấn tượng với tôi, đặc biệt là những địa điểm du lịch lịch sử và phong cảnh thiên nhiên. Hướng dẫn viên rất chuyên nghiệp và thân thiện.",
+      "thumbnail": [
+        "hoian1",
+        "hoian2",
+        "hoian3",
+        "hoian4"
+      ],
+      "gender": true,
+      "location": "hoian"
+    },
+    {
+      "id": "c4",
+      "image": "avatar3",
+      "star": [
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill"
+      ],
+      "name": "Nguyễn Thị B",
+      "address": "quận Gò Vấp, TPHCM",
+      "comment": "Tour Bangkok - Pattaya thật sự tuyệt vời. Tôi và gia đình đã có những kỷ niệm đáng nhớ tại Thái Lan. Cảm ơn Intertour đã tổ chức chuyến đi tuyệt vời này.",
+      "thumbnail": [
+        "thailan1",
+        "thailan2",
+        "thailan3",
+        "thailan4"
+      ],
+      "gender": false,
+      "location": "thailan"
+    },
+    {
+      "id": "c5",
+      "image": "avatar4",
+      "star": [
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill"
+      ],
+      "name": "Hoàng Văn C",
+      "address": "quận 1, TPHCM",
+      "comment": "Chuyến đi Phú Quốc thật sự thú vị và đáng nhớ. Tôi đã có những trải nghiệm tuyệt vời cùng với gia đình tại đảo ngọc xinh đẹp này. Cảm ơn Intertour!",
+      "thumbnail": [
+        "phuquoc1",
+        "phuquoc2",
+        "phuquoc3",
+        "phuquoc4"
+      ],
+      "gender": true,
+      "location": "phuquoc"
+    },
+    {
+      "id": "c6",
+      "image": "avatar5",
+      "star": [
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill"
+      ],
+      "name": "Nguyễn Văn D",
+      "address": "quận Bình Thạnh, TPHCM",
+      "comment": "Chuyến đi Đà Lạt thật sự tuyệt vời. Không gian yên bình và thoáng đãng. Tôi đã có những khoảnh khắc đáng nhớ cùng bạn bè tại đây.",
+      "thumbnail": [
+        "dalat1",
+        "dalat2",
+        "dalat3",
+        "dalat4"
+      ],
+      "gender": true,
+      "location": "dalat"
+    },
+    {
+      "id": "c7",
+      "image": "avatar6",
+      "star": [
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill"
+      ],
+      "name": "Trần Thị E",
+      "address": "quận 5, TPHCM",
+      "comment": "Chuyến đi Singapore - Malaysia thật sự tuyệt vời. Được tham quan nhiều địa điểm nổi tiếng và thưởng thức ẩm thực địa phương rất thú vị.",
+      "thumbnail": [
+        "singapore1",
+        "singapore2",
+        "singapore3",
+        "singapore4"
+      ],
+      "gender": false,
+      "location": "singapore"
+    },
+    {
+      "id": "c8",
+      "image": "avatar7",
+      "star": [
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill"
+      ],
+      "name": "Lê Văn F",
+      "address": "quận 10, TPHCM",
+      "comment": "Chuyến đi Nha Trang thật sự tuyệt vời. Tôi đã có những trải nghiệm thú vị tại các điểm du lịch nổi tiếng ở Nha Trang. Cảm ơn Intertour đã tổ chức chuyến đi này.",
+      "thumbnail": [
+        "nhatrang1",
+        "nhatrang2",
+        "nhatrang3",
+        "nhatrang4"
+      ],
+      "gender": true,
+      "location": "nhatrang"
+    },
+    {
+      "id": "c9",
+      "image": "avatar8",
+      "star": [
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill"
+      ],
+      "name": "Hoàng Thị G",
+      "address": "quận 8, TPHCM",
+      "comment": "Chuyến đi Tokyo - Nhật Bản thật sự tuyệt vời. Tôi đã có những trải nghiệm đáng nhớ tại đất nước hoa anh đào này. Cảm ơn Intertour!",
+      "thumbnail": [
+        "tokyo1",
+        "tokyo2",
+        "tokyo3",
+        "tokyo4"
+      ],
+      "gender": false,
+      "location": "tokyo"
+    },
+    {
+      "id": "c10",
+      "image": "avatar9",
+      "star": [
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill"
+      ],
+      "name": "Nguyễn Văn H",
+      "address": "quận 7, TPHCM",
+      "comment": "Chuyến đi Huế - Đà Nẵng thật sự tuyệt vời. Tôi đã có những trải nghiệm thú vị tại các điểm du lịch lịch sử và thưởng thức ẩm thực địa phương. Cảm ơn Intertour!",
+      "thumbnail": [
+        "hue1",
+        "hue2",
+        "hue3",
+        "hue4"
+      ],
+      "gender": true,
+      "location": "hue"
+    },
+    {
+      "id": "c11",
+      "image": "avatar10",
+      "star": [
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill"
+      ],
+      "name": "Phạm Thị I",
+      "address": "quận 4, TPHCM",
+      "comment": "Chuyến đi Sydney - Úc thật sự tuyệt vời. Tôi đã có những trải nghiệm thú vị tại đất nước Kangaroo này. Cảm ơn Intertour!",
+      "thumbnail": [
+        "uc1",
+        "uc2",
+        "uc3",
+        "uc4"
+      ],
+      "gender": false,
+      "location": "uc"
+    },
+    {
+      "id": "c12",
+      "image": "avatar11",
+      "star": [
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill"
+      ],
+      "name": "Trần Văn K",
+      "address": "quận 2, TPHCM",
+      "comment": "Chuyến đi Seoul - Hàn Quốc thật sự tuyệt vời. Tôi đã có những trải nghiệm đáng nhớ tại xứ sở kim chi này. Cảm ơn Intertour!",
+      "thumbnail": [
+        "hanquoc1",
+        "hanquoc2",
+        "hanquoc3",
+        "hanquoc4"
+      ],
+      "gender": true,
+      "location": "hanquoc"
+    },
+    {
+      "id": "c13",
+      "image": "avatar12",
+      "star": [
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill"
+      ],
+      "name": "Lê Thị L",
+      "address": "quận 3, TPHCM",
+      "comment": "Chuyến đi London - Anh thật sự tuyệt vời. Tôi đã có những trải nghiệm đáng nhớ tại xứ sở sương mù này. Cảm ơn Intertour!",
+      "thumbnail": [
+        "london1",
+        "london2",
+        "london3",
+        "london4"
+      ],
+      "gender": false,
+      "location": "london"
+    },
+    {
+      "id": "c14",
+      "image": "avatar13",
+      "star": [
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill"
+      ],
+      "name": "Nguyễn Văn M",
+      "address": "quận 6, TPHCM",
+      "comment": "Chuyến đi Paris - Pháp thật sự tuyệt vời. Tôi đã có những trải nghiệm đáng nhớ tại Thành phố ánh sáng này. Cảm ơn Intertour!",
+      "thumbnail": [
+        "phap1",
+        "phap2",
+        "phap3",
+        "phap4"
+      ],
+      "gender": true,
+      "location": "phap"
+    },
+    {
+      "id": "c15",
+      "image": "avatar14",
+      "star": [
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill",
+        "bi bi-star-fill"
+      ],
+      "name": "Trần Thị N",
+      "address": "quận Bình Tân, TPHCM",
+      "comment": "Chuyến đi Phú Yên - Italy thật sự tuyệt vời. Tôi đã có những trải nghiệm đáng nhớ tại Thành phố của sự lãng mạn này. Cảm ơn Intertour!",
+      "thumbnail": [
+        "phuyen1",
+        "phuyen2",
+        "phuyen3",
+        "phuyen4"
+      ],
+      "gender": false,
+      "location": "phuyen"
+    }
+  ],
+  "news": [
+    {
+      "id": "n1",
+      "image": "nara",
+      "thumbnail": [
+        "nara1",
+        "nara2",
+        "nara3",
+        "nara4"
+      ],
+      "name": "CÔNG VIÊN NARA ĐIỂM ĐẾN HOT NHẤT MÙA THU NHẬT BẢN",
+      "title": [
+        "Khám Phá Công Viên Nara: Khoảnh Khắc Thần Tiên Bên Những Chú Hươu Hoang Dã"
+      ],
+      "time": "15/3/2024",
+      "start": "Ngày 24 Tháng 09 Năm 2024",
+      "nameImage": "Công viên Nara",
+      "blog": [
+        "Bạn đã từng nghĩ đến việc tận hưởng một chuyến hành trình đầy kỳ quan giữa thiên nhiên hoang dã và văn hóa truyền thống? Công viên Nara ở Nhật Bản là điểm đến tuyệt vời, nơi bạn có thể trải nghiệm sự kỳ diệu của việc tiếp xúc gần gũi với hàng ngàn hươu hoang dã sống tự do.",
+        "Khám phá Công viên Nara, nơi tạo ra những kỷ niệm khó quên và những kết nối đặc biệt với thiên nhiên và văn hóa Nhật Bản. Hãy đắm chìm trong thế giới đầy phép màu của hươu hoang dã và trải nghiệm một cuộc phiêu lưu đáng nhớ tại đất nước hoa anh đào.",
+        "Khám phá Công viên Nara, nơi tạo ra những kỷ niệm khó quên và những kết nối đặc biệt với thiên nhiên và văn hóa Nhật Bản. Hãy đắm chìm trong thế giới đầy phép màu của hươu hoang dã và trải nghiệm một cuộc phiêu lưu đáng nhớ tại đất nước hoa anh đào.",
+        "Công viên Nara mở cửa free 24h mỗi ngày nên bạn có thể tha hồ dạo chơi ngắm lá, cho hươu ăn rồi sống ảo 1000 kiểu, thưởng thức trà chiều ở quán trà dưới khung cảnh ngập lá vàng, deep enjoy từ thiên nhiên đến văn hóa của xứ sở xinh đẹp Phù Tang nhé!",
+        "Kể từ thời Edo (1603-1868) thì cứ hàng năm vào dịp tháng 10, người ta sẽ tổ chức sự kiện 'Cắt sừng' để hạn chế việc những chú hươu bước vào thời kỳ động dục gây nguy hiểm cho khách tham quan. Trong sự kiện này, các Seko (người đóng vai trò giữ không cho động vật hoang dã chạy thoát trong các buổi đi săn) xuất hiện trong trang phục cổ sẽ đè những chú hươu xuống và dùng cưa để cắt sừng. Những chiếc sừng bị cắt xuống của hươu – tức sứ giả của các vị thần sẽ được dâng tế trước thần linh. Văn hóa của thành phố Nara xinh đẹp thú vị ghê hén."
+      ]
+    },
+    {
+      "id": "n2",
+      "image": "halong",
+      "thumbnail": [
+        "halong1",
+        "halong2",
+        "halong3",
+        "halong4"
+      ],
+      "name": "Vịnh Hạ Long – Di Sản Thiên Nhiên Thế Giới Đẹp Mê Hoặc",
+      "title": [
+        "Khám Phá Vịnh Hạ Long: Hòn Đảo Thiên Đường Giữa Biển Xanh Mênh Mông"
+      ],
+      "time": "27/3/2024",
+      "start": "Ngày 24 Tháng 09 Năm 2024",
+      "nameImage": "Vịnh Hạ Long",
+      "blog": [
+        "Vịnh Hạ Long - một trong những di sản thiên nhiên thế giới nổi tiếng nhất, với những hòn đảo đáng kinh ngạc và cảnh quan biển tuyệt đẹp. Hãy khám phá vẻ đẹp mê hoặc của Vịnh Hạ Long cùng chúng tôi.",
+        "Khám phá Vịnh Hạ Long - nơi hòa quyện giữa bầu trời xanh và biển cả bao la. Đây là điểm đến lý tưởng cho những ai muốn tận hưởng không gian yên bình và thiên nhiên tươi đẹp.",
+        "Vịnh Hạ Long không chỉ là một điểm du lịch nổi tiếng, mà còn là biểu tượng của văn hóa và lịch sử Việt Nam. Hãy đến và khám phá những bí mật tại Vịnh Hạ Long."
+      ]
+    },
+    {
+      "id": "n3",
+      "image": "kyoto",
+      "thumbnail": [
+        "kyoto1",
+        "kyoto2",
+        "kyoto3",
+        "kyoto4"
+      ],
+      "name": "Thành Phố Kyoto – Hành Trình Quay Về Quá Khứ Nhật Bản",
+      "title": [
+        "Khám Phá Thành Phố Kyoto: Hòa Mình Trong Khung Cảnh Những Ngôi Đền Cổ"
+      ],
+      "time": "15/1/2024",
+      "start": "Ngày 24 Tháng 09 Năm 2024",
+      "nameImage": "Thành phố Kyoto",
+      "blog": [
+        "Thành phố Kyoto là nơi lưu giữ những di sản văn hóa cổ xưa của Nhật Bản. Hãy đắm chìm trong không gian yên bình và tĩnh lặng của những ngôi đền cổ kính.",
+        "Khám phá thành phố Kyoto - một điểm đến không thể bỏ qua khi bạn đến Nhật Bản. Đây là nơi gợi nhớ về quá khứ lịch sử và văn hóa của đất nước mặt trời mọc.",
+        "Thành phố Kyoto không chỉ là điểm đến của những người yêu thích lịch sử và văn hóa, mà còn là nơi bạn có thể tận hưởng vẻ đẹp tự nhiên và không gian yên bình."
+      ]
+    },
+    {
+      "id": "n4",
+      "image": "vungtau",
+      "thumbnail": [
+        "vungtau1",
+        "vungtau2",
+        "vungtau3",
+        "vungtau4"
+      ],
+      "name": "Thành Phố Vũng Tàu – Bãi Biển Xanh Mát Giữa Lòng Thành Phố",
+      "title": [
+        "Khám Phá Thành Phố Vũng Tàu: Thư Giãn Trên Bờ Biển Nắng Ấm"
+      ],
+      "time": "4/3/2023",
+      "start": "Ngày 24 Tháng 09 Năm 2024",
+      "nameImage": "Thành phố Vũng Tàu",
+      "blog": [
+        "Thành phố Vũng Tàu - một điểm đến lý tưởng cho những ai muốn thư giãn và tận hưởng không gian biển xanh mát. Hãy đến và khám phá vẻ đẹp của thành phố này cùng chúng tôi.",
+        "Với bãi biển dài và cát trắng mịn, thành phố Vũng Tàu là điểm đến phổ biến của du khách trong và ngoài nước. Hãy cùng chúng tôi trải nghiệm những khoảnh khắc thư giãn trên bờ biển này.",
+        "Thành phố Vũng Tàu không chỉ có bãi biển tuyệt đẹp, mà còn là nơi bạn có thể thưởng thức những món ăn hải sản ngon và tham gia vào các hoạt động giải trí thú vị."
+      ]
+    },
+    {
+      "id": "n5",
+      "image": "phap",
+      "thumbnail": [
+        "phap1",
+        "phap2",
+        "phap3",
+        "phap4"
+      ],
+      "name": "Thành Phố Paris – Lòng Thành Phố Ánh Sáng và Tình Yêu",
+      "title": [
+        "Khám Phá Thành Phố Paris: Hành Trình Đến Trái Tim Của Pháp"
+      ],
+      "time": "2/3/2024",
+      "start": "Ngày 24 Tháng 09 Năm 2024",
+      "nameImage": "Thành phố Paris",
+      "blog": [
+        "Thành phố Paris - biểu tượng của nghệ thuật, văn hóa và lãng mạn. Hãy đến và khám phá vẻ đẹp của thành phố ánh sáng này cùng chúng tôi.",
+        "Paris không chỉ là điểm đến của những người yêu nghệ thuật và kiến ​​trúc, mà còn là nơi bạn có thể thưởng thức ẩm thực tuyệt vời và mua sắm trong các cửa hàng thời trang nổi tiếng.",
+        "Thăm Paris là trải nghiệm không thể quên với những điểm du lịch nổi tiếng như Tháp Eiffel, Nhà Hát Lớn và Bảo Tàng Louvre. Hãy bắt đầu hành trình của bạn tại thành phố này ngay hôm nay."
+      ]
+    },
+    {
+      "id": "n6",
+      "image": "london",
+      "thumbnail": [
+        "london1",
+        "london2",
+        "london3",
+        "london4"
+      ],
+      "name": "Thành Phố London – Trái Tim Của Vương Quốc Anh",
+      "title": [
+        "Khám Phá Thành Phố London: Hành Trình Đến Trái Tim Của Vương Quốc Anh"
+      ],
+      "time": "2/9/2024",
+      "start": "Ngày 24 Tháng 09 Năm 2024",
+      "nameImage": "Thành phố London",
+      "blog": [
+        "London - một trong những thành phố lịch sử và văn hóa quan trọng nhất thế giới. Hãy cùng chúng tôi khám phá vẻ đẹp và sự phong phú của thành phố này.",
+        "Khám phá London - nơi hội tụ của nghệ thuật, văn hóa và lịch sử. Hãy đắm chìm trong không khí sôi động và năng động của thành phố lớn nhất Vương Quốc Anh.",
+        "London không chỉ là điểm đến của những người yêu thích lịch sử và văn hóa, mà còn là nơi bạn có thể tận hưởng những trải nghiệm mua sắm, ẩm thực và giải trí tuyệt vời."
+      ]
+    },
+    {
+      "id": "n7",
+      "image": "danang",
+      "thumbnail": [
+        "danang1",
+        "danang2",
+        "danang3",
+        "danang4"
+      ],
+      "name": "Thành Phố Đà Nẵng – Trái Tim Của Văn Hóa Cổ Đại",
+      "title": [
+        "Khám Phá Thành Phố Đà Nẵng: Hành Trình Đến Trái Tim Của Văn Hóa Cổ Đại"
+      ],
+      "time": "24/12/2023",
+      "start": "Ngày 24 Tháng 09 Năm 2024",
+      "nameImage": "Thành phố danang",
+      "blog": [
+        "Đà Nẵng - trái tim của văn hóa cổ đại và lịch sử phong phú. Hãy đến và khám phá những di sản văn hóa tuyệt vời của thành phố này cùng chúng tôi.",
+        "Khám phá Đà Nẵng - nơi hòa mình giữa những di tích lịch sử và kiến ​​trúc đẹp mắt. Hãy tham quan các danh lam thắng cảnh nổi tiếng như Colosseum, Di tích La Mã và Vatican.",
+        "Đà Nẵng không chỉ là điểm đến của những người yêu thích lịch sử và văn hóa, mà còn là nơi bạn có thể thưởng thức ẩm thực ngon và mua sắm trong các cửa hàng thời trang sang trọng."
+      ]
+    },
+    {
+      "id": "n8",
+      "image": "dubai",
+      "thumbnail": [
+        "dubai1",
+        "dubai2",
+        "dubai3",
+        "dubai4"
+      ],
+      "name": "Thành Phố Dubai – Thiên Đường Mua Sắm Và Giải Trí",
+      "title": [
+        "Khám Phá Thành Phố Dubai: Hành Trình Đến Thiên Đường Mua Sắm Và Giải Trí"
+      ],
+      "time": "2/2/2024",
+      "start": "Ngày 24 Tháng 09 Năm 2024",
+      "nameImage": "Thành phố Dubai",
+      "blog": [
+        "Dubai - thiên đường mua sắm và giải trí của Trung Đông. Hãy cùng chúng tôi khám phá vẻ đẹp và sự xa hoa của thành phố này.",
+        "Khám phá Dubai - nơi bạn có thể tận hưởng trải nghiệm mua sắm sang trọng và tham gia vào các hoạt động giải trí độc đáo như trượt cát và lướt sóng trên bãi biển.",
+        "Dubai không chỉ là điểm đến của những người muốn mua sắm và vui chơi, mà còn là nơi bạn có thể khám phá văn hóa đa dạng và kiến ​​trúc hiện đại của Trung Đông."
+      ]
+    },
+    {
+      "id": "n9",
+      "image": "my",
+      "thumbnail": [
+        "my1",
+        "my2",
+        "my3",
+        "my4"
+      ],
+      "name": "Thành Phố New York – Trái Tim Của Mỹ Đại Lục",
+      "title": [
+        "Khám Phá Thành Phố New York: Hành Trình Đến Trái Tim Của Mỹ Đại Lục"
+      ],
+      "time": "20/1/2024",
+      "start": "Ngày 24 Tháng 09 Năm 2024",
+      "nameImage": "Thành phố New York",
+      "blog": [
+        "New York - trái tim của Mỹ Đại Lục và thành phố không bao giờ ngủ. Hãy cùng chúng tôi khám phá vẻ đẹp và sự năng động của thành phố này.",
+        "Khám phá New York - nơi hội tụ của nghệ thuật, văn hóa và kinh doanh. Hãy tham quan các điểm du lịch nổi tiếng như Tháp Tự Do, Trung tâm Thương mại Thế giới và Trung tâm Nghệ thuật Metropolitan.",
+        "New York không chỉ là điểm đến của những người muốn trải nghiệm cuộc sống đô thị sôi động, mà còn là nơi bạn có thể thưởng thức ẩm thực đa dạng và mua sắm trong các cửa hàng thời trang hàng đầu thế giới."
+      ]
+    },
+    {
+      "id": "n10",
+      "image": "sydney",
+      "thumbnail": [
+        "sydney1",
+        "sydney2",
+        "sydney3",
+        "sydney4"
+      ],
+      "name": "Thành Phố Sydney – Điểm Đến Hoàn Hảo ở Úc Châu",
+      "title": [
+        "Khám Phá Thành Phố Sydney: Hành Trình Đến Đất Nước Kangaroo"
+      ],
+      "time": "4/4/2022",
+      "start": "Ngày 24 Tháng 09 Năm 2024",
+      "nameImage": "Thành phố Sydney",
+      "blog": [
+        "Sydney - một trong những thành phố đẹp nhất thế giới với cảnh quan tự nhiên tuyệt vời và cuộc sống đô thị năng động. Hãy cùng chúng tôi khám phá vẻ đẹp của thành phố này.",
+        "Khám phá Sydney - nơi bạn có thể tận hưởng không gian biển xanh và các hoạt động giải trí thú vị như lướt sóng và đi thuyền buồm. Hãy tham quan các điểm du lịch nổi tiếng như Cây Cầu Cảng Sydney và Đền Opera.",
+        "Sydney không chỉ là điểm đến của những người muốn trải nghiệm cuộc sống biển và nắng, mà còn là nơi bạn có thể thưởng thức ẩm thực và văn hóa độc đáo của Úc Châu."
+      ]
+    },
+    {
+      "id": "n11",
+      "image": "cairo",
+      "thumbnail": [
+        "cairo1",
+        "cairo2",
+        "cairo3",
+        "cairo4"
+      ],
+      "name": "Thành Phố Cairo – Trái Tim Của Ai Cập Cổ Đại",
+      "title": [
+        "Khám Phá Thành Phố Cairo: Hành Trình Đến Trái Tim Của Ai Cập Cổ Đại"
+      ],
+      "time": "10/3/2023",
+      "start": "Ngày 24 Tháng 09 Năm 2024",
+      "nameImage": "Thành phố Cairo",
+      "blog": [
+        "Cairo - trái tim của Ai Cập cổ đại và nền văn hóa phong phú. Hãy cùng chúng tôi khám phá vẻ đẹp và sự lịch sử của thành phố này.",
+        "Khám phá Cairo - nơi bạn có thể tìm hiểu về lịch sử phong phú và văn hóa đa dạng của Ai Cập. Hãy tham quan các điểm du lịch nổi tiếng như Kim tự tháp Giza, Bảo tàng Ai Cập và Khu phố Cổ Cairo.",
+        "Cairo không chỉ là điểm đến của những người muốn khám phá di sản lịch sử của Ai Cập, mà còn là nơi bạn có thể thưởng thức ẩm thực đặc trưng và mua sắm trong các chợ địa phương."
+      ]
+    },
+    {
+      "id": "n12",
+      "image": "rio",
+      "thumbnail": [
+        "rio1",
+        "rio2",
+        "rio3",
+        "rio4"
+      ],
+      "name": "Thành Phố Rio de Janeiro – Thiên Đường Biển và Công Viên",
+      "title": [
+        "Khám Phá Thành Phố Rio de Janeiro: Hành Trình Đến Thiên Đường Biển và Công Viên"
+      ],
+      "time": "10/2/2023",
+      "start": "Ngày 24 Tháng 09 Năm 2024",
+      "nameImage": "Thành phố Rio de Janeiro",
+      "blog": [
+        "Rio de Janeiro - một trong những điểm đến biển đẹp nhất thế giới với cảnh quan tự nhiên tuyệt vời và cuộc sống vui vẻ. Hãy cùng chúng tôi khám phá vẻ đẹp của thành phố này.",
+        "Khám phá Rio de Janeiro - nơi bạn có thể tận hưởng không gian biển xanh và tham gia vào các hoạt động giải trí thú vị như lướt sóng và tham quan công viên quốc gia Tijuca.",
+        "Rio de Janeiro không chỉ là điểm đến của những người muốn thư giãn trên bãi biển, mà còn là nơi bạn có thể khám phá văn hóa sôi động và kiến ​​trúc độc đáo của Brazil."
+      ]
+    },
+    {
+      "id": "n13",
+      "image": "moscow",
+      "thumbnail": [
+        "moscow1",
+        "moscow2",
+        "moscow3",
+        "moscow4"
+      ],
+      "name": "Thành Phố Moscow – Trái Tim Của Nước Nga",
+      "title": [
+        "Khám Phá Thành Phố Moscow: Hành Trình Đến Trái Tim Của Nước Nga"
+      ],
+      "time": "20/3/2024",
+      "start": "Ngày 24 Tháng 09 Năm 2024",
+      "nameImage": "Thành phố Moscow",
+      "blog": [
+        "Moscow - trái tim của Nga và một trong những thành phố lớn nhất thế giới. Hãy cùng chúng tôi khám phá vẻ đẹp và sự lịch sử của thành phố này.",
+        "Khám phá Moscow - nơi bạn có thể tham quan các di tích lịch sử và kiến ​​trúc độc đáo của Nga như Quảng trường Đỏ, Lâu đài Moscow và Nhà thờ St. Basil.",
+        "Moscow không chỉ là điểm đến của những người muốn tìm hiểu về lịch sử và văn hóa của Nga, mà còn là nơi bạn có thể thưởng thức ẩm thực ngon và mua sắm trong các cửa hàng đẳng cấp."
+      ]
+    },
+    {
+      "id": "n14",
+      "image": "saopaulo",
+      "thumbnail": [
+        "saopaulo1",
+        "saopaulo2",
+        "saopaulo3",
+        "saopaulo4"
+      ],
+      "name": "Thành Phố Sao Paulo – Trái Tim Của Brazil",
+      "title": [
+        "Khám Phá Thành Phố Sao Paulo: Hành Trình Đến Trái Tim Của Brazil"
+      ],
+      "time": "20/3/2024",
+      "start": "Ngày 24 Tháng 09 Năm 2024",
+      "nameImage": "Thành phố Sao Paulo",
+      "blog": [
+        "Sao Paulo - trái tim của Brazil và một trong những thành phố lớn nhất thế giới. Hãy cùng chúng tôi khám phá vẻ đẹp và sự năng động của thành phố này.",
+        "Khám phá Sao Paulo - nơi bạn có thể tận hưởng cuộc sống đô thị năng động và tham gia vào các hoạt động giải trí đa dạng như mua sắm và thưởng thức ẩm thực.",
+        "Sao Paulo không chỉ là điểm đến của những người muốn trải nghiệm văn hóa và ẩm thực đa dạng của Brazil, mà còn là nơi bạn có thể khám phá các di tích lịch sử và kiến ​​trúc hiện đại."
+      ]
+    },
+    {
+      "id": "n15",
+      "image": "singapore",
+      "thumbnail": [
+        "singapore1",
+        "singapore2",
+        "singapore3",
+        "singapore4"
+      ],
+      "name": "Thành Phố Singapore – Điểm Đến Hiện Đại và Phồn Thịnh",
+      "title": [
+        "Khám Phá Thành Phố Singapore: Hành Trình Đến Đảo Quốc Sư Tử"
+      ],
+      "time": "20/3/2024",
+      "start": "Ngày 24 Tháng 09 Năm 2024",
+      "nameImage": "Thành phố Singapore",
+      "blog": [
+        "Singapore - một trong những điểm đến hiện đại và phồn thịnh nhất thế giới. Hãy cùng chúng tôi khám phá vẻ đẹp và sự phong phú của thành phố này.",
+        "Khám phá Singapore - nơi bạn có thể tận hưởng không gian đô thị hiện đại và tham quan các điểm du lịch nổi tiếng như Công Viên Quốc Gia và Marina Bay Sands.",
+        "Singapore không chỉ là điểm đến của những người muốn mua sắm và thưởng thức ẩm thực, mà còn là nơi bạn có thể khám phá văn hóa đa dạng và kiến ​​trúc độc đáo của Đông Nam Á."
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "khoa",
+      "email": "",
+      "phone": "21312414",
+      "role": "user"
+    },
+    {
+      "id": "4f7e",
+      "username": "sjeuqu",
+      "email": "khoaldps32038@fpt.edu.vn",
+      "phone": "0893873645",
+      "password": "$2a$10$qZ.WB9ex8gshUpagykhuZeOFIeepYg5rjuIYVhrUZwp66OmYqbbP2",
+      "gender": "",
+      "terms": true,
+      "image": "user",
+      "role": "user",
+      "address": "4b121, đường Thanh Niên"
+    }
+  ],
+  "Voucher": [
+    {
+      "Ma": "TOUR2024",
+      "price": 200000,
+      "id": "0784"
+    }
+  ],
+  "orders": [
+    {
+      "id": "bbc0",
+      "username": "sjeuqu",
+      "email": "khoaldps32038@fpt.edu.vn",
+      "phone": "0893873645",
+      "address": "4b121, đường Thanh Niên",
+      "note": "",
+      "name": "Phan Thiet Mui Ne Day Tour From Ho Chi Minh With 2D1N Optional",
+      "quantity": 1,
+      "total": 109000000,
+      "pay": "direct"
+    },
+    {
+      "id": "e5fa",
+      "username": "sjeuqu",
+      "email": "khoaldps32038@fpt.edu.vn",
+      "phone": "0893873645",
+      "address": "4b121, đường Thanh Niên",
+      "note": "",
+      "name": "Tour Singapore - Malaysia 5 Ngày 4 Đêm",
+      "quantity": 1,
+      "total": 24000000,
+      "pay": "direct"
+    },
+    {
+      "id": "5e4f",
+      "username": "sjeuqu",
+      "email": "khoaldps32038@fpt.edu.vn",
+      "phone": "0893873645",
+      "address": "4b121, đường Thanh Niên",
+      "note": "",
+      "name": "Phan Thiet Mui Ne Day Tour From Ho Chi Minh With 2D1N Optional",
+      "quantity": 1,
+      "total": 25000000,
+      "pay": "direct",
+      "time": "2024-04-08T03:04:39.581Z"
+    },
+    {
+      "id": "de15",
+      "username": "sjeuqu",
+      "email": "khoaldps32038@fpt.edu.vn",
+      "phone": "0893873645",
+      "address": "4b121, đường Thanh Niên",
+      "note": "",
+      "name": "Tour Singapore - Malaysia 5 Ngày 4 Đêm",
+      "quantity": 1,
+      "total": 24000000,
+      "pay": "online",
+      "time": "2024-04-08"
+    },
+    {
+      "id": "f782",
+      "username": "sjeuqu",
+      "email": "khoaldps32038@fpt.edu.vn",
+      "phone": "0893873645",
+      "address": "4b121, đường Thanh Niên",
+      "note": "",
+      "name": "Phan Thiet Mui Ne Day Tour From Ho Chi Minh With 2D1N Optional",
+      "quantity": 1,
+      "total": 25000000,
+      "status": "Chờ xử lý",
+      "pay": "Chưa thanh toán",
+      "paymethod": "online",
+      "time": "2024-04-08"
+    },
+    {
+      "id": "42ad",
+      "username": "sjeuqu",
+      "email": "khoaldps32038@fpt.edu.vn",
+      "phone": "0893873645",
+      "address": "4b121, đường Thanh Niên",
+      "note": "",
+      "name": "Phan Thiet Mui Ne Day Tour From Ho Chi Minh With 2D1N Optional",
+      "quantity": 1,
+      "total": 25000000,
+      "status": "Chờ xử lý",
+      "pay": "Chưa thanh toán",
+      "paymethod": "online",
+      "time": "2024-04-08"
+    },
+    {
+      "id": "59b3",
+      "username": "sjeuqu",
+      "email": "khoaldps32038@fpt.edu.vn",
+      "phone": "0893873645",
+      "address": "4b121, đường Thanh Niên",
+      "note": "",
+      "name": "Phan Thiet Mui Ne Day Tour From Ho Chi Minh With 2D1N Optional",
+      "quantity": 3,
+      "total": 75000000,
+      "status": "Chờ xử lý",
+      "pay": "Chưa thanh toán",
+      "paymethod": "online",
+      "time": "2024-04-08"
+    }
+  ]
+}

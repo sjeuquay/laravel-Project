@@ -1,0 +1,471 @@
+<!-- banner -->
+<div class="">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000" style="height: 400px;">
+                <img src="https://designercomvn.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2017/10/26015637/dich-vu-thiet-ke-banner-du-lich-chuyen-nghiep-tai-ha-noi1.jpg"
+                    class="d-block h-100 w-100 img-fluid" alt=" ...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000" style="height: 400px;">
+                <img src="https://designercomvn.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2017/10/26015647/dich-vu-thiet-ke-banner-du-lich-chuyen-nghiep-tai-ha-noi4.jpg"
+                    class="d-block h-100 w-100 img-fluid" alt="...">
+            </div>
+            <div class="carousel-item" style="height: 400px;">
+                <img src="https://dulich24h.com.vn/wp-content/uploads/2023/04/banner-quang-cao-du-lich-ky-nghi_113659754.jpg"
+                    class="d-block h-100 w-100 img-fluid" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<!-- search -->
+<section>
+    <div class="container-lg container-xl p-0">
+        <div class="rounded-2" style="background-color: #1f2746;">
+            <div class="p-3">
+                <div class="search-title mb-3">
+                    <i class="bi bi-search fw-bold text-white fs-4 lh-sm"></i>
+                    <span class="text-uppercase fw-bold text-white fs-4 lh-sm">Tìm tour du lịch</span>
+                </div>
+                <form action="">
+                    <div class="row align-items-end" role="search">
+                        <div class="col-sm-12 col-lg-4">
+                            <label for="" class="text-white form-label">Tìm kiếm</label>
+                            <input type="text" name="" id="" class="form-control" placeholder="Tìm kiếm tour..." #inputsearch>
+                        </div>
+                        <div class="col-sm-12 col-lg-2">
+                            <label for="" class="text-white form-label">Nơi đến</label>
+                            <select name="" id="" class="form-select">
+                                <option value="">Tất Cả</option>
+                                <option value="" class="text-uppercase">Đà Lạt</option>
+                                <option value="" class="text-uppercase">Hà Nội</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-12 col-lg-2">
+                            <label for="" class="text-white form-label">Nơi khởi hành</label>
+                            <select name="" id="" class="form-select">
+                                <option value="">Tất Cả</option>
+                                <option value="" class="text-uppercase">Đà Lạt</option>
+                                <option value="" class="text-uppercase">Hà Nội</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-12 col-lg-2">
+                            <label for="" class="text-white form-label">Thời gian khởi hành</label>
+                            <select name="" id="" class="form-select">
+                                <option value="">Tất Cả</option>
+                                <option value="" class="text-capitalize">tháng 1</option>
+                                <option value="" class="text-capitalize">tháng 2</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-12 col-lg-2">
+                            <button (click)="onSearch(inputsearch.value)"  type="button" class="btn btn-info text-white w-100 fw-bold mt-4">Tìm
+                                Tour</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tour in year -->
+<section>
+    <div class="container-lg container-md mt-5 mb-4">
+        <div class="text-center d-flex flex-column">
+            <span class=" fs-4 fw-bold text-uppercase">TOUR NỔI BẬT TRONG NĂM 2024</span>
+            <span>Các tour tìm kiếm và được đặt nhiều nhất nhất trong năm 2024, bạn có thể đặt trước từ bây giờ
+                để có giá tốt nhất</span>
+        </div>
+        <div class="row mt-5">
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 mb-5" *ngFor="let p of productsHot | slice:0:8">
+                <div class="card position-relative shadow" href="#">
+                    <img height="200px" src="assets/img/{{p.image}}.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="box-title-card mb-4">
+                            <h5 class=" card-title fs-6">{{p.name}}</h5>
+                        </div>
+                        <div class="box-time-card">
+                            <p class="card-text mb-2 fw">Phương tiện:
+                                <span class="ms-2" *ngFor="let i of p.transport"><i class="{{i}}"></i></span>
+                            </p>
+                            <p class="mb-2"><i class="bi bi-clock"></i> <span
+                                    class="ms-2 fw-semibold">{{p.interval}}</span></p>
+                            <p><i class="bi bi-calendar"></i> <span class="ms-2 fw-semibold">{{p.time}}</span></p>
+                        </div>
+                        <div class="box-price row align-items-center">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="d-flex justify-content-between ">
+                                    <span class="fw-bold fs-6" style="color: #d30000;">{{p.sale | number}}
+                                        đ</span>
+                                    <del class="fw-bold fs-6 opacity-50">{{p.price | number}}
+                                        đ</del>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <a href="#" [routerLink]="['/chitietsanpham', p.id]" class="w-100 btn btn-info text-white fw-bold mt-3">Đặt
+                                    Tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagi_add text-center">
+            <span class="text-uppercase btn btn-outline-info fw-bold">Xem thêm các tour khác</span>
+        </div>
+    </div>
+</section>
+<!-- end -->
+
+<!-- banner quang cao -->
+<section>
+    <div class="container-xl container-lg container-md">
+        <img class="img-fluid my-2" src="https://www.tuannguyentravel.com/data/sl/tour-phu-quoc-2022.jpg" alt />
+    </div>
+</section>
+
+<!-- Tour trong nuoc -->
+<section>
+    <div class="container-xl container-lg mt-4">
+        <div class="d-flex align-items-center mb-4">
+            <img style="width: 50px;" src="../assets/img/Travel-removebg-preview.png" alt="" class="img-fluid p-0 me-3">
+            <link rel="stylesheet" href="">
+            <span class="text-uppercase fw-bold fs-4">Tour trong nước</span>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3" *ngFor="let p of productsTrongNuoc | slice:0:4">
+                <div class="card position-relative shadow" href="#">
+                    <img height="200px" src="assets/img/{{p.image}}.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="box-title-card mb-4">
+                            <h5 class=" card-title fs-6">{{p.name}}</h5>
+                        </div>
+                        <div class="box-time-card">
+                            <p class="card-text mb-2 fw">Phương tiện:
+                                <span class="ms-2" *ngFor="let i of p.transport"><i class="{{i}}"></i></span>
+                            </p>
+                            <p class="mb-2"><i class="bi bi-clock"></i> <span
+                                    class="ms-2 fw-semibold">{{p.interval}}</span></p>
+                            <p><i class="bi bi-calendar"></i> <span class="ms-2 fw-semibold">{{p.time}}</span></p>
+                        </div>
+                        <div class="box-price row align-items-center">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="d-flex justify-content-between ">
+                                    <span class="fw-bold fs-6" style="color: #d30000;">{{p.sale | number}}
+                                        đ</span>
+                                    <del class="fw-bold fs-6 opacity-50">{{p.price | number}}
+                                        đ</del>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <button href="#" class="w-100 btn btn-info text-white fw-bold mt-3">Đặt
+                                    Tour</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagi_add text-center m-5">
+            <span class="text-uppercase btn btn-outline-info fw-bold">Xem thêm các tour khác</span>
+        </div>
+    </div>
+</section>
+<!-- end -->
+
+<!-- Tour quốc tế -->
+<section>
+    <div class="container-xl container-lg">
+        <div class="d-flex align-items-center mb-4">
+            <img style="width: 50px;" src="../assets/img/Travel-removebg-preview.png" alt="" class="img-fluid p-0 me-3">
+            <link rel="stylesheet" href="">
+            <span class="text-uppercase fw-bold fs-4">Tour quốc tế</span>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3" *ngFor="let p of productsQuocTe | slice:0:4">
+                <div class="card position-relative shadow" href="#">
+                    <img height="200px" src="assets/img/{{p.image}}.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="box-title-card mb-4">
+                            <h5 class=" card-title fs-6">{{p.name}}</h5>
+                        </div>
+                        <div class="box-time-card">
+                            <p class="card-text mb-2 fw">Phương tiện:
+                                <span class="ms-2" *ngFor="let i of p.transport"><i class="{{i}}"></i></span>
+                            </p>
+                            <p class="mb-2"><i class="bi bi-clock"></i> <span
+                                    class="ms-2 fw-semibold">{{p.interval}}</span></p>
+                            <p><i class="bi bi-calendar"></i> <span class="ms-2 fw-semibold">{{p.time}}</span></p>
+                        </div>
+                        <div class="box-price row align-items-center">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="d-flex justify-content-between ">
+                                    <span class="fw-bold fs-6" style="color: #d30000;">{{p.sale | number}}
+                                        đ</span>
+                                    <del class="fw-bold fs-6 opacity-50">{{p.price | number}}
+                                        đ</del>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <button href="#" class="w-100 btn btn-info text-white fw-bold mt-3">Đặt
+                                    Tour</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagi_add text-center m-5">
+            <span class="text-uppercase btn btn-outline-info fw-bold">Xem thêm các tour khác</span>
+        </div>
+    </div>
+</section>
+<!-- end -->
+
+<!-- location social -->
+<section class="bg-info pt-5 pb-5">
+    <div class="container-xl container-md container-lg">
+        <h3 class="text-uppercase text-center fw-bold text-white mb-5">các địa điểm nổi tiếng</h3>
+        <div class="row">
+            <div class="col-sm-6 col-lg-4 mb-4" *ngFor="let l of locationNation | slice:0:9">
+                <div class="img-location position-relative" style="height: 260px;">
+                    <img class="img-fluid rounded-2 h-100 w-100" src="assets/img/{{l.image}}.jpg" alt="">
+                    <div class="rounded-2 location-content position-absolute bottom-0 w-100 bg-dark p-2">
+                        <i class="bi bi-geo-alt-fill text-white"></i>
+                        <span class="text-uppercase text-white ms-2">{{l.nameNation}}</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="pagi_add text-center">
+            <span class="text-uppercase btn btn-outline-light fw-bold">Xem thêm các tour khác</span>
+        </div>
+    </div>
+</section>
+<!-- end -->
+
+<!-- customer review -->
+<section>
+    <div class="container-xl container-md container-lg p-5">
+        <h3 class="text-uppercase text-center fw-bold mb-5 fs-3 d-none d-lg-block">đánh giá của khách hàng</h3>
+        <h3 class="text-uppercase text-center fw-bold mb-5 fs-5 d-lg-none d-sm-block">đánh giá của khách hàng
+        </h3>
+        <div class="row multiple-items position-relative ps-0">
+            <div class="col-lg-4 col-sm-12 mb-4 d-lg-block d-none" *ngFor="let c of listCustomer | slice:0:3"
+                style="height: 500px;">
+                <div class="bg-white text-center rounded-2 p-5 shadow h-100">
+                    <div class="mb-3">
+                        <div class="img d-flex justify-content-center">
+                            <img style="width: 100px; height: 100px;" src="assets/img/{{c.image}}.jpg" alt=""
+                                class="rounded-circle img-fluid">
+                        </div>
+                        <div class="rating">
+                            <ul class="navbar-nav flex-row justify-content-center text-warning">
+                                <li class="nav-item" *ngFor="let i of c.star">
+                                    <i class="{{i}}"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="customer-review_content">
+                        <div class="">
+                            <h4 class="fs-5 fw-bold text-light-emphasis text-uppercase" *ngIf="c.gender === true">Anh
+                                {{c.name}}</h4>
+                            <h4 class="fs-5 fw-bold text-light-emphasis text-uppercase" *ngIf="c.gender === false">Chị
+                                {{c.name}}</h4>
+                        </div>
+                        <p class="text-capitalize">{{c.address}}</p>
+                        <p class="fw-lighter">{{c.comment}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-block d-lg-none">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" *ngFor="let c of listCustomer | slice:0:3"
+                            style="height: 400px;">
+                            <div class="bg-white text-center rounded-2 p-5 shadow h-100">
+                                <div class="mb-3">
+                                    <div class="img d-flex justify-content-center">
+                                        <img style="width: 100px; height: 100px;" src="assets/img/{{c.image}}.jpg"
+                                            alt="" class="rounded-circle img-fluid">
+                                    </div>
+                                    <div class="rating">
+                                        <ul class="navbar-nav flex-row justify-content-center text-warning">
+                                            <li class="nav-item" *ngFor="let i of c.star">
+                                                <i class="{{i}}"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="customer-review_content">
+                                    <div class="">
+                                        <h4 class="fs-5 fw-bold text-light-emphasis text-uppercase"
+                                            *ngIf="c.gender === true">Anh {{c.name}}</h4>
+                                        <h4 class="fs-5 fw-bold text-light-emphasis text-uppercase"
+                                            *ngIf="c.gender === false">Chị {{c.name}}</h4>
+                                    </div>
+                                    <p class="text-capitalize">{{c.address}}</p>
+                                    <p class="fw-lighter text-truncate text-3_trun">{{c.comment}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end -->
+
+<!-- <div class="container mt-3">
+    Tour hot
+    <div class="row d-flex justify-content-between mx-1 ">
+        <div class=" p-1 w-auto">
+            <h4 class="text-success"> TOUR NỔI BẬT</h4>
+        </div>
+        <select class="form-select w-auto" [(ngModel)]="selectedSort" (change)="onSortChange()">
+            <option value="asc">Giá tăng dần</option>
+            <option value="desc">Giá giảm dần</option>
+        </select>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3 my-3" *ngFor="let p of productsHot">
+            <div class="card shadow position-relative">
+                <img src="assets/img/{{p.image}}.jpg" height="200px" class="card-img-top" alt="..." />
+                <div class="rounded-start-pill bg-danger text-white px-4 py-1 position-absolute end-0">
+                    Giá sốc
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-success">{{p.name}}</h5>
+                    <p class="text-danger m-0"><b>Giá: {{p.sale | number}} đ</b></p>
+                    <p class><del>Giá: {{p.price | number}} đ</del></p>
+                    <p>
+                        <i class="bi bi-alarm"></i> Thời gian:
+                        {{p.duration}}
+                        <br />
+                        <i class="bi bi-airplane"></i> Phương tiện:
+                        {{p.transport}}<br />
+                        <i class="bi bi-house"></i> Khách sạn:
+                        {{p.hotel}} <i class="text-warning bi bi-star-fill"></i>
+                        <br>
+                        <i class="bi bi-calendar-date"></i> Ngày đi:
+                        {{p.start}}
+                    </p>
+                    <div class="text-center">
+                        <a class="btn btn-warning text-white" [routerLink]="['/chitietsanpham', p.id]">
+                            Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    Banner quảng cáo
+    <img class="img-fluid my-2" src="https://www.tuannguyentravel.com/data/sl/tour-phu-quoc-2022.jpg" alt />
+    Tour trong nước
+    <div class="row d-flex justify-content-between mx-1 ">
+        <div class=" p-1 w-auto">
+            <h4 class="text-success"> TOUR TRONG NƯỚC</h4>
+        </div>
+        <select class="form-select w-auto" [(ngModel)]="selectedSort" (change)="onSortChange1()">
+            <option value="asc">Giá tăng dần</option>
+            <option value="desc">Giá giảm dần</option>
+        </select>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3 my-3" *ngFor="let p of productsTrongNuoc | slice:0:4">
+            <div class="card shadow position-relative">
+                <img class src="assets/img/{{p.image}}.jpeg" height="200px" class="card-img-top" alt="..." />
+                <div class="rounded-start-pill bg-danger text-white px-4 py-1 position-absolute end-0">
+                    Giá sốc
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-success">{{p.name}}</h5>
+                    <p class="text-danger m-0"><b>Giá: {{p.sale | number}} đ</b></p>
+                    <p class><del>Giá: {{p.price | number}} đ</del></p>
+                    <p>
+                        <i class="bi bi-alarm"></i> Thời gian:
+                        {{p.duration}}
+                        <br />
+                        <i class="bi bi-airplane"></i> Phương tiện:
+                        {{p.transport}}<br />
+                        <i class="bi bi-house"></i> Khách sạn:
+                        {{p.hotel}} <i class="text-warning bi bi-star-fill"></i>
+                        <br>
+                        <i class="bi bi-calendar-date"></i> Ngày đi:
+                        {{p.start}}
+                    </p>
+                    <div class="text-center">
+                        <a class="btn btn-warning text-white" [routerLink]="['/chitietsanpham', p.id]">
+                            Xem chi tiết</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    Tour Quốc Tế
+    <div class="row d-flex justify-content-between mx-1 bg">
+        <div class=" p-1 w-auto">
+            <h4 class="text-success">TOUR QUỐC TẾ</h4>
+        </div>
+        <select class="form-select w-auto" [(ngModel)]="selectedSort" (change)="onSortChange2()">
+            <option value="asc">Giá tăng dần</option>
+            <option value="desc">Giá giảm dần</option>
+        </select>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3 my-3" *ngFor="let p of productsQuocTe | slice:0:4">
+            <div class="card shadow position-relative">
+                <img class src="assets/img/{{p.image}}.jpeg" height="200px" class="card-img-top" alt="..." />
+                <div class="rounded-start-pill bg-danger text-white px-4 py-1 position-absolute end-0">
+                    Giá sốc
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-success">{{p.name}}</h5>
+                    <p class="text-danger m-0"><b>Giá: {{p.sale | number}} đ</b></p>
+                    <p class><del>Giá: {{p.price | number}} đ</del></p>
+                    <p>
+                        <i class="bi bi-alarm"></i> Thời gian:
+                        {{p.duration}}
+                        <br />
+                        <i class="bi bi-airplane"></i> Phương tiện:
+                        {{p.transport}}<br />
+                        <i class="bi bi-house"></i> Khách sạn:
+                        {{p.hotel}} <i class="text-warning bi bi-star-fill"></i>
+                        <br>
+                        <i class="bi bi-calendar-date"></i> Ngày đi:
+                        {{p.start}}
+                    </p>
+                    <div class="text-center">
+                        <a class="btn btn-warning text-white" [routerLink]="['/chitietsanpham', p.id]">
+                            Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
